@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Features/Layout";
 import Home from "./Pages/Home/Home";
-import ContactPage from "./Pages/ContactPage";
 import Service from "./Pages/Service";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
