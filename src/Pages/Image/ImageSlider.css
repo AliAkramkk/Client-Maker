@@ -1,0 +1,46 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+  }
+  
+  #image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+  }
+  
+  /* CSS animation for transforming the image track */
+  @keyframes slideIn {
+    from {
+      transform: translate(0%, -50%);
+    }
+    to {
+      transform: translate(var(--nextPercentage, 0%), -50%);
+    }
+  }
+  
+  /* CSS animation for moving the images */
+ /* CSS animation for moving the images */
+ @keyframes slideImages {
+    from {
+      object-position: 100% center;
+    }
+    to {
+      object-position: calc(100% + var(--nextPercentage, 0%)) center;
+    }
+  }
+  

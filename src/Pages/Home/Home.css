@@ -1,0 +1,6 @@
+.home-background {
+  background-image: url('../../assets/h1.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  /* Additional styles if needed */
+}
