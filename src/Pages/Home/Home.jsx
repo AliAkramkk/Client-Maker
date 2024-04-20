@@ -5,35 +5,35 @@ import SectionCard from "../../Components/Home/SectionCard";
 import uaeCard from "../../assets/homeMain.jpg";
 import SectionCard2 from "../../Components/Home/SectionCard2";
 import Footer from "../../Components/Footer/Footer";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 const Home = () => {
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 2000,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // };
   const navbarStyle = {
     background:
       "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
@@ -83,7 +83,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    <Slider>
+    {/* <Slider> */}
       <div className="flex justify-center">
       <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
   <img
@@ -209,7 +209,7 @@ const Home = () => {
   </div>
 </article>
       </div>
-    </Slider>
+    {/* </Slider> */}
       {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path style={navbarStyle} fill-opacity="0.1" d="M0,128L80,138.7C160,149,320,171,480,165.3C640,160,800,128,960,117.3C1120,107,1280,117,1360,122.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> */}
       <SectionCard2 />
       <SectionCard />
