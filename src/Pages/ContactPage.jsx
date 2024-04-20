@@ -92,14 +92,13 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
 const ContactInfo = ({ icon, title, content }) => {
   return (
-    <div className="flex mb-8">
+    <div className="flex mb-8 lg:mb-0 lg:flex-col lg:items-start p-4">
       <div className="mr-6 flex h-12 w-12 items-center justify-center rounded bg-primary/5 text-primary">
         {icon}
       </div>
-      <div>
+      <div className="flex-grow">
         <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
           {title}
         </h4>
