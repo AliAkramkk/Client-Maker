@@ -43,7 +43,7 @@ const Home = () => {
             <Link className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 
                 hover:-translate-y-1 hover:scale-110 
                 duration-300 ... animate-bounce  ..."
-               to= "/contct" >LET US KNOW YOUR GOAL</Link>
+               to= "/contact" >LET US KNOW YOUR GOAL</Link>
               {/* <a
                 href=""
                 className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 
