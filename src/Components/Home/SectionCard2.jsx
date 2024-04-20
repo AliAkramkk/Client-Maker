@@ -20,24 +20,21 @@ const SectionCard2 = () => {
             <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
 
             <div className="p-8 sm:p-16 lg:p-24">
-              <h2 className="text-2xl font-bold sm:text-3xl">
+              {/* <h2 className="text-2xl font-bold sm:text-3xl">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Tempore, debitis.
-              </h2>
+              </h2> */}
 
               <p className="mt-4 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid, molestiae! Quidem est esse numquam odio deleniti,
-                beatae, magni dolores provident quaerat totam eos, aperiam
-                architecto eius quis quibusdam fugiat dicta.
+              Welcome to [Your Company Name], where we turn dreams into reality. Imagine a world where your brand soars above the competition, capturing the hearts and minds of your audience effortlessly. Our digital marketing web application is your gateway to that world, where your dreams take flight  we transform your aspirations into achievable goals. Whether you're looking to increase brand awareness, drive website traffic, or boost sales, we've got you covered. Our team of experts specializes in crafting personalized strategies tailored to your unique business needs.
               </p>
 
-              <a
+              {/* <a
                 href="#"
                 className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 pointer-events-none ..."
               >
                 Get in Touch
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
