@@ -26,7 +26,7 @@ const SectionCard2 = () => {
               </h2> */}
 
               <p className="mt-4 text-gray-600">
-              Welcome to [Your Company Name], where we turn dreams into reality. Imagine a world where your brand soars above the competition, capturing the hearts and minds of your audience effortlessly. Our digital marketing web application is your gateway to that world, where your dreams take flight  we transform your aspirations into achievable goals. Whether you're looking to increase brand awareness, drive website traffic, or boost sales, we've got you covered. Our team of experts specializes in crafting personalized strategies tailored to your unique business needs.
+              Our mission is to boost your online visibility, engage your audience, and drive your business forward. With our cutting-edge SEO techniques, we'll ensure that your website climbs to the top of search engine results, bringing more traffic and more customers to your door.Our content creation services are second to none, designed to captivate your audience and keep them coming back for more. Whether it's blog posts, social media content, or videos, we'll create compelling, tailored content that speaks directly to your target audience.With our intuitive, user-friendly platform, you'll have everything you need to manage your digital marketing efforts in one place. From analyzing website traffic to launching ad campaigns, we've got you covered.So, are you ready to take your business to the next level? Let <span className="text-white text-xl font-semibold">Client</span> <span className="text-red-700 text-xl font-semibold" >Maker</span>be your guide. Contact us today and let's make your digital dreams a reality.
               </p>
 
               {/* <a
