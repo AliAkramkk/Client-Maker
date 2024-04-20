@@ -26,7 +26,7 @@ const Navbar = () => {
               className="w-[150px] h-[80px] transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
             />
             <h3 className="-ml-10 block font-extrabold text-white -mt-6 text-xl font-serif">
-              TheClient<span className="text-rose-700"> Maker</span>
+              TheClients<span className="text-rose-700"> Maker</span>
             </h3>
           </a>
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
