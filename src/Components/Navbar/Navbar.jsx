@@ -30,7 +30,7 @@ const Navbar = () => {
             </h3>
           </a>
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-            <li className="font-montserrat leading-normal text-lg text-white">
+            <li className="font-montserrat leading-normal font-bold text-lg text-white">
               <Link to= "/">Home</Link>
             </li>
             <li className="font-montserrat leading-normal text-lg text-white">
