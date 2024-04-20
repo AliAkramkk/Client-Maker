@@ -43,7 +43,7 @@ const Footer = () => {
           >
             <img
               src={logo}
-              className="h-44 w-44"
+              className="h-64 w-64"
               alt="Your Logo"
               style={{ cursor: "pointer" }}
             />
