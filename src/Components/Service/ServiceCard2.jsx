@@ -13,19 +13,19 @@ const ServiceCard2 = () => {
     </div> */}
 
     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-    <div class="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2 ">
         <img
           alt=""
           src ={ser}
           // src="https://images.unsplash.com/photo-1621274790572-7c32596bc67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
-          class="h-40 w-full object-cover sm:h-56 md:h-full"
+          class="h-40 w-full object-cover sm:h-56 md:h-full transition duration-300 ease-in-out transform hover:scale-125"
         />
 
         <img
           alt=""
           src={magazine}
           // src="https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-          class="h-40 w-full object-cover sm:h-56 md:h-full"
+          class="h-40 w-full object-cover sm:h-56 md:h-full transition duration-300 ease-in-out transform hover:scale-125"
         />
       </div>
 
