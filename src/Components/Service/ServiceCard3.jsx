@@ -1,5 +1,5 @@
 import React from 'react'
-import ser from  '../../assets/s2.png'
+import ser from  '../../assets/co.jpg'
 const ServiceCard3 = () => {
   return (
     <section>
@@ -15,12 +15,10 @@ const ServiceCard3 = () => {
         </div>
   
         <div className="lg:py-24">
-          <h2 className="text-3xl text-white font-bold sm:text-4xl">Grow your audience</h2>
+          <h2 className="text-3xl text-white font-bold sm:text-4xl">Customized Content Maker</h2>
   
           <p className="mt-4 text-gray-600">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-            eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-            quidem quam repellat.
+          Our content creation services are personalized to align with your brand voice, values, and goals. From compelling blog posts and engaging social media content to informative articles and captivating videos, we develop high-quality, tailored content that enhances your online presence and drives customer engagement.
           </p>
   
           {/* <a

@@ -22,18 +22,13 @@ const ServiceCard4 = () => {
 
       <div className="lg:py-16">
         <article className="space-y-4 text-gray-600">
+        <h2 className="text-3xl text-white font-bold sm:text-4xl">Customized Web Maker</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-            eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae
-            eius quidem quam repellat.
+          We specialize in crafting bespoke websites tailored to your unique business needs. Our team creates user-friendly, visually appealing, and fully functional websites that reflect your brand identity and resonate with your target audience..
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum explicabo quidem
-            voluptatum voluptas illo accusantium ipsam quis, vel mollitia? Vel provident culpa
-            dignissimos possimus, perferendis consectetur odit accusantium dolorem amet voluptates
-            aliquid, ducimus tempore incidunt quas. Veritatis molestias tempora distinctio
-            voluptates sint! Itaque quasi corrupti, sequi quo odit illum impedit!
+          Our approach to website development is centered around your specific requirements, ensuring that the end result is not just a website, but a powerful tool for your business growth. Our designers work closely with you to understand your brand identity and vision. We create custom designs that capture the essence of your brand, incorporating elements that resonate with your target audience.A great website is one that is easy to navigate and provides a seamless user experience. We prioritize user-friendliness in our designs, ensuring that visitors can easily find the information they need and take desired actions.
           </p>
         </article>
       </div>

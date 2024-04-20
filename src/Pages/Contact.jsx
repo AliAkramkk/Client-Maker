@@ -60,17 +60,17 @@ const Contact = () => {
             <div className="bg-white dark:bg-gray-900 rounded-lg p-6"style={navbarStyle}>
               <h2 className="text-xl font-semibold text-gray-800 dark:text-white">What Sets Us Apart</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white underline'>Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
+                <span className='text-white underline text-2xl'>Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
               </p>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white underline'>Innovative Solutions:</span> In the ever-evolving world of digital marketing, staying ahead of the curve is crucial. That's why we're constantly exploring new technologies and innovative techniques to keep your brand at the forefront of your industry.
+                <span className='text-white underline text-2xl'>Innovative Solutions:</span> In the ever-evolving world of digital marketing, staying ahead of the curve is crucial. That's why we're constantly exploring new technologies and innovative techniques to keep your brand at the forefront of your industry.
               </p>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white underline'>Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
+                <span className='text-white underline text-2xl'>Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
               </p>
               <h2 className="mt-8 text-xl font-semibold text-gray-800 dark:text-white">Get Started Today</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white'>Client</span> <span className='text-red-800'>Maker</span> can help you achieve your goals.
+                Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white font-extrabold'>Client</span> <span className='text-red-800 font-bold'>Maker</span> can help you achieve your goals.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const ContactInfo = ({ icon, title, content }) => {
     background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
   };
   return (
-    <div className="flex items-center"style={navbarStyle}>
+    <div className="flex items-center">
       <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
         {icon}
       </span>
@@ -103,7 +103,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
     background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
   };
   return (
-    <div className="mt-4"style={navbarStyle}>
+    <div className="mt-4">
       <textarea
         rows={row}
         placeholder={placeholder}
@@ -120,7 +120,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
     background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
   };
   return (
-    <div className="mt-4"style={navbarStyle}>
+    <div className="mt-4">
       <input
         type={type}
         placeholder={placeholder}

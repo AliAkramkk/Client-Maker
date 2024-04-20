@@ -1,5 +1,6 @@
 import React from 'react'
-import ser from '../../assets/s1.png'
+import ser from '../../assets/maker.jpg'
+import magazine from '../../assets/magazine.jpg'
 
 const ServiceCard2 = () => {
   return (
@@ -12,21 +13,27 @@ const ServiceCard2 = () => {
     </div> */}
 
     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-      <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2">
         <img
           alt=""
-      src={ser}
-          //   src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-          className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-125"
+          src ={ser}
+          // src="https://images.unsplash.com/photo-1621274790572-7c32596bc67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
+          class="h-40 w-full object-cover sm:h-56 md:h-full"
+        />
+
+        <img
+          alt=""
+          src={magazine}
+          // src="https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          class="h-40 w-full object-cover sm:h-56 md:h-full"
         />
       </div>
 
       <div className="lg:py-16">
         <article className="space-y-4 text-gray-600">
+        <h2 className="text-3xl text-white font-bold sm:text-4xl">Customized Ad Maker</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-            eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae
-            eius quidem quam repellat.
+          With our customized advertising services, we create impactful ad campaigns that resonate with your audience and drive conversions. From eye-catching visuals to persuasive copywriting, we develop tailored ads across various platforms to effectively showcase your products or services and achieve your advertising goals.
           </p>
 
           <p>
