@@ -5,7 +5,7 @@ import SectionCard from "../../Components/Home/SectionCard";
 import uaeCard from "../../assets/homeMain.jpg";
 import SectionCard2 from "../../Components/Home/SectionCard2";
 import Footer from "../../Components/Footer/Footer";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   const navbarStyle = {
     background:
@@ -40,14 +40,18 @@ const Home = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <a
-                href="#"
+            <Link className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 
+                hover:-translate-y-1 hover:scale-110 
+                duration-300 ... animate-bounce  ..."
+               to= "/contct" >LET US KNOW YOUR GOAL</Link>
+              {/* <a
+                href=""
                 className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 
                 hover:-translate-y-1 hover:scale-110 
                 duration-300 ... animate-bounce  ..."
               >
-                LET US KNOW YOUR GOAL
-              </a>
+                
+              </a> */}
             </div>
           </div>
         </div>
