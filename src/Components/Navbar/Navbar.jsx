@@ -43,10 +43,10 @@ const Navbar = () => {
               
               <Link to="/service">Services</Link>
             </li>
-            <li className="font-montserrat leading-normal text-lg text-white">
+            {/* <li className="font-montserrat leading-normal text-lg text-white">
               
               <Link to="/image">Image</Link>
-            </li>
+            </li> */}
           </ul>
 
           {/* <a href="/" className="flex items-center">
