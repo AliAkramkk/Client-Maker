@@ -9,7 +9,7 @@ const Service1 = () => {
   return (
     <div className=''  style={backgroundColorStyle}>
         <Navbar />
-        <div className='bg-blue-50 m-4 mt-2 w-96 h-36 flex justify-items-center ' style={{ width: '70%' }}>item1</div>
+        <div className='bg-blue-50 m-4 mt-2 w-96 h-36 flex justify-items-center pt-6' style={{ width: '70%' }}>item1</div>
         <div className='bg-blue-100 m-4'>item1</div>
         <div className='bg-blue-100 m-4'>item1</div>
         <div className='bg-blue-100 m-4'>item1</div>
