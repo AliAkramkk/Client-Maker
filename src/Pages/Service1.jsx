@@ -5,7 +5,7 @@ const Service1 = () => {
         backgroundColor: `rgb(234, 239, 177)`
       };
   return (
-    <div className='flex'  style={backgroundColorStyle}>
+    <div className=''  style={backgroundColorStyle}>
         <div className='bg-blue-100'>item1</div>
         <div className='bg-blue-100'>item1</div>
         <div className='bg-blue-100'>item1</div>
