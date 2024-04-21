@@ -96,7 +96,7 @@ const Home = () => {
 
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-sky-400">
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser}
@@ -122,7 +122,7 @@ const Home = () => {
 </article>
       </div>
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser1}
@@ -148,7 +148,7 @@ const Home = () => {
 </article>
       </div>
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser2}
@@ -174,7 +174,7 @@ const Home = () => {
 </article>
       </div>
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser3}
