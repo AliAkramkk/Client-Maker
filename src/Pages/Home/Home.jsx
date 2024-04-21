@@ -222,12 +222,14 @@ const Home = () => {
 
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
       <div>
-        <img
-          alt=""
-          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-          className="w-full h-auto object-cover"
-        />
-        <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+  <img
+    alt=""
+    src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+    className="absolute inset-0 h-full w-full object-cover"
+  />
+
+  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
@@ -243,6 +245,7 @@ const Home = () => {
       </p>
     </div>
   </div>
+</article>
       </div>
       <div>
         <img
