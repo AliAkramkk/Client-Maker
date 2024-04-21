@@ -88,7 +88,7 @@ const SectionCard = () => {
           </a>
 
           <a
-            className="block rounded-xl border bg-gray-900 border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            className="block rounded-xl border bg-gray-900 border-gray-800 p-8 shadow-xl transition hover:shadow-xl hover:shadow-sky-400"
             href="#"
           >
             <img
