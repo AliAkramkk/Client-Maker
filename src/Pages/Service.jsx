@@ -8,7 +8,7 @@ import ServiceCard4 from '../Components/Service/ServiceCard4'
 
 const Service = () => {
   return (
-    <div className='bg-gray-900'>
+    <div className='bg-gray-100'>
       <Navbar />
       <section
         className="relative bg-cover bg-center"
