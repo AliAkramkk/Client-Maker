@@ -38,11 +38,11 @@ const Navbar = () => {
             <Link to= "/about">About</Link>
             </li>
             <li className="font-montserrat leading-normal text-lg text-white">
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="font-montserrat leading-normal text-lg text-white">
               
               <Link to="/service">Services</Link>
+            </li>
+            <li className="font-montserrat leading-normal text-lg text-white">
+              <Link to="/contact">Contact</Link>
             </li>
             {/* <li className="font-montserrat leading-normal text-lg text-white">
               
