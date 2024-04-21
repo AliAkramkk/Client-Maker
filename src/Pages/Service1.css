@@ -1,0 +1,9 @@
+.first-div {
+    margin: 4px;
+  margin-top: 20px;
+  width: 70%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
