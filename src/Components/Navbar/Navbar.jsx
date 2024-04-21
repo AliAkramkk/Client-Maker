@@ -48,6 +48,7 @@ const Navbar = () => {
               <Link to="/image">Image</Link>
             </li> */}
           </ul>
+          <p className="text-white text-sm italic mt-1">Your digital <em>salesman</em></p>
 
           {/* <a href="/" className="flex items-center">
             <img
