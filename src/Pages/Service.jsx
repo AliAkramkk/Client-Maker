@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import service from '../assets/serA.jpg'
+import service from '../assets/service.jpg'
 import ServiceCard1 from '../Components/Service/ServiceCard1'
 import ServiceCard2 from '../Components/Service/ServiceCard2'
 import ServiceCard3 from '../Components/Service/ServiceCard3'
@@ -12,10 +12,10 @@ const Service = () => {
       <Navbar />
       <section
         className="relative bg-cover bg-center"
-        // style={{
-        //   backgroundImage: `url(${service})`,
-        //   height: '400px', 
-        // }}
+        style={{
+          backgroundImage: `url(${service})`,
+          height: '400px', 
+        }}
       >
         {/* Remove the gray overlay in the mobile menu */}
         <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
