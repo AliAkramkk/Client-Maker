@@ -29,7 +29,7 @@ const About = () => {
             className="mb-4 max-w-xs md:mr-6 md:mb-0 transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
           />
           <h3 className="text-xl md:text-2xl lg:text-4xl mt-4 md:mt-20 mb-20 text-center md:text-left">
-            Welcome to <strong className='text-white'>Client </strong> <span className='text-red-700 font-bold'>Maker</span>. Your Digital Sales Man.
+            Welcome to <strong className='text-white'>Clients </strong> <span className='text-red-700 font-bold'>Maker</span>. Your Digital Sales Man.
           </h3>
         </div>
         <div className="bg p-8 text-gray-800">
