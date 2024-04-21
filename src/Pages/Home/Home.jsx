@@ -40,7 +40,7 @@ const Home = () => {
       "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
   };
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-600">
       <Navbar />
       <section
         className="relative bg-gray-900 bg-cover bg-center bg-no-repeat"
