@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import service from '../assets/service.jpg'
+import service from '../assets/ser4.jpg'
 import ServiceCard1 from '../Components/Service/ServiceCard1'
 import ServiceCard2 from '../Components/Service/ServiceCard2'
 import ServiceCard3 from '../Components/Service/ServiceCard3'
