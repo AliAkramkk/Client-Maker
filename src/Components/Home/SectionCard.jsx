@@ -23,7 +23,7 @@ const SectionCard = () => {
           </p> */}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 bg-gray-900">
+        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
           <a
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
@@ -31,7 +31,7 @@ const SectionCard = () => {
             <img
               src={target}
               alt="Target Image"
-              className="size-10 text-pink-500"
+              className="size-10 text-pink-500 bg-gray-900"
             />
 
             <h2 className="mt-4 text-xl font-bold text-gray-900">
@@ -52,7 +52,7 @@ const SectionCard = () => {
             <img
               src={support}
               alt="Target Image"
-              className="size-10 text-pink-500"
+              className="size-10 text-pink-500 bg-gray-900"
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
@@ -73,7 +73,7 @@ const SectionCard = () => {
             <img
               src={handshake}
               alt="Target Image"
-              className="size-10 text-pink-500"
+              className="size-10 text-pink-500 bg-gray-900"
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
@@ -94,7 +94,7 @@ const SectionCard = () => {
             <img
               src={phone}
               alt="Target Image"
-              className="size-10 text-pink-500"
+              className="size-10 text-pink-500 bg-gray-900"
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
@@ -115,7 +115,7 @@ const SectionCard = () => {
             <img
               src={presentation}
               alt="Target Image"
-              className="size-10 text-pink-500"
+              className="size-10 text-pink-500 bg-gray-900"
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
@@ -136,7 +136,7 @@ const SectionCard = () => {
             <img
               src={location}
               alt="Target Image"
-              className="size-10 text-pink-500"
+              className="size-10 text-pink-500 bg-gray-900"
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
