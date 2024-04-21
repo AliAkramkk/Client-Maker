@@ -6,11 +6,11 @@ const Service1 = () => {
       };
   return (
     <div className=''  style={backgroundColorStyle}>
-        <div className='bg-blue-100'>item1</div>
-        <div className='bg-blue-100'>item1</div>
-        <div className='bg-blue-100'>item1</div>
-        <div className='bg-blue-100'>item1</div>
-        <div className='bg-blue-100'>item1</div>
+        <div className='bg-blue-100 m-4'>item1</div>
+        <div className='bg-blue-100 m-4'>item1</div>
+        <div className='bg-blue-100 m-4'>item1</div>
+        <div className='bg-blue-100 m-4'>item1</div>
+        <div className='bg-blue-100 m-4'>item1</div>
         
     </div>
   )
