@@ -221,7 +221,7 @@ const Home = () => {
 <Slider {...settings}>
 
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
-      <div>
+      <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
   <img
     alt=""
@@ -247,7 +247,7 @@ const Home = () => {
   </div>
 </article>
       </div>
-      <div>
+      <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
   <img
     alt=""
@@ -273,7 +273,7 @@ const Home = () => {
   </div>
 </article>
       </div>
-      <div>
+      <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
   <img
     alt=""
