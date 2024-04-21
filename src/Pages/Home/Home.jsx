@@ -84,7 +84,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-    <Slider {...settings}>
+      <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+              Our Services </h1>
+    {/* <Slider {...settings}>
       <div className="flex justify-center">
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 ">
                   <div className=" pt-2">
@@ -214,6 +216,31 @@ const Home = () => {
       </div>
       </div>
       </div>
+    </Slider> */}
+
+<Slider {...settings}>
+      <div>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+      <div>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+      <div>
+        <img
+          alt=""
+          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+      {/* Add more image divs as needed */}
     </Slider>
       {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path style={navbarStyle} fill-opacity="0.1" d="M0,128L80,138.7C160,149,320,171,480,165.3C640,160,800,128,960,117.3C1120,107,1280,117,1360,122.7L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> */}
       <SectionCard2 />
