@@ -26,7 +26,8 @@ const Navbar = () => {
               className="w-[150px] h-[80px] transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
             />
             <h3 className="-ml-10 block font-extrabold text-white -mt-6 text-xl font-serif">
-              TheClients<span className="text-rose-700"> Maker</span>
+              TheClients<span className="text-rose-700"> Maker</span><br />
+              <p className="text-white text-sm italic mt-1">Your digital <em>salesman</em></p>
             </h3>
           </a>
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
@@ -48,7 +49,7 @@ const Navbar = () => {
               <Link to="/image">Image</Link>
             </li> */}
           </ul>
-          <p className="text-white text-sm italic mt-1">Your digital <em>salesman</em></p>
+          
 
           {/* <a href="/" className="flex items-center">
             <img
