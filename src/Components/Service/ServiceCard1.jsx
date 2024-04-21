@@ -17,7 +17,7 @@ const ServiceCard1 = () => {
       </div>
 
       <div className="lg:py-24">
-        <h2 className="text-3xl text-white font-bold sm:text-4xl">Customized Marketing Maker</h2>
+        <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Customized Marketing Maker</h2>
 
         <p className="mt-4 text-gray-600">
         Our customized marketing solutions are designed to elevate your brand visibility and drive meaningful results. Whether it's through SEO, social media marketing, email campaigns, or influencer partnerships, we craft personalized strategies to reach your target audience and maximize your ROI.

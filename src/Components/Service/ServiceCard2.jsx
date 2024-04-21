@@ -31,7 +31,7 @@ const ServiceCard2 = () => {
 
       <div className="lg:py-16">
         <article className="space-y-4 text-gray-600">
-        <h2 className="text-3xl text-white font-bold sm:text-4xl">Customized Ad Maker</h2>
+        <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Customized Ad Maker</h2>
           <p>
           With our customized advertising services, we create impactful ad campaigns that resonate with your audience and drive conversions. From eye-catching visuals to persuasive copywriting, we develop tailored ads across various platforms to effectively showcase your products or services and achieve your advertising goals.
           </p>

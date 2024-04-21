@@ -22,7 +22,7 @@ const ServiceCard4 = () => {
 
       <div className="lg:py-16">
         <article className="space-y-4 text-gray-600">
-        <h2 className="text-3xl text-white font-bold sm:text-4xl">Customized Web Maker</h2>
+        <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Customized Web Maker</h2>
           <p>
           We specialize in crafting bespoke websites tailored to your unique business needs. Our team creates user-friendly, visually appealing, and fully functional websites that reflect your brand identity and resonate with your target audience..
           </p>
