@@ -219,7 +219,7 @@ const Home = () => {
     </Slider> */}
 
 <Slider {...settings}>
-<div className="flex justify-center">
+<div className="flex">
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
       <div>
         <img
