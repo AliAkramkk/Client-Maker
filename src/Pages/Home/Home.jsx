@@ -47,10 +47,10 @@ const Home = () => {
     <div className="bg-gray-100">
       <Navbar />
       <section
-        className="relative bg-gray-900 bg-cover bg-center bg-no-repeat"
+        className="relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${uaeCard})` }}
       >
-        <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+        {/* <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -96,11 +96,11 @@ const Home = () => {
 
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-sky-400">
   <img
     alt=""
     src={ser}
-    className="absolute inset-0 h-full w-full object-cover"
+    className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105"
   />
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">

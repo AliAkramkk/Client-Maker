@@ -1,14 +1,15 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-
+import service from '../assets/ser4.jpg'
 const Contact = () => {
   const navbarStyle = {
     background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
   };
 
   return (
-    <div className="bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]">
+    <div className="bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]"
+    style={{ backgroundImage: `url(${service})` }}>
       <Navbar />
       <div className="container my-8 md:my-24 mx-auto md:px-6">
         <section className="bg-white dark:bg-gray-900 rounded-lg" style={navbarStyle}>
