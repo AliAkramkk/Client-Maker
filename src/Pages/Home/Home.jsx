@@ -49,7 +49,7 @@ const Home = () => {
       <section
         className="relative bg-contain bg-center bg-no-repeat h-screen"
         style={{ backgroundImage: `url(${uaeCard})`,
-        backgroundSize: 'cover', 
+        backgroundSize: 'contain', 
         backgroundPosition: 'center', 
         backgroundRepeat: 'no-repeat' }}
       >
