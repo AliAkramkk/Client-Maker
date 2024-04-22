@@ -11,7 +11,7 @@ const SectionCard2 = () => {
                 alt=""
                
                 src={section}
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-contain"
               />
             </div>
           </div>
