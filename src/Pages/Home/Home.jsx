@@ -62,7 +62,7 @@ const Home = () => {
           <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
       Opening a new era for your business
       <br />
-      <strong className="block font-extrabold text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950">
+      <strong className="block font-extrabold text-rose-700 font-serif text-7xl animate-spin-slow ... shadow-slate-950">
         GROWTH
       </strong>
     </h1>
