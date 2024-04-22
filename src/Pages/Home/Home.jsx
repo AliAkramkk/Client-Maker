@@ -50,7 +50,7 @@ const Home = () => {
         className="relative bg-contain bg-center bg-no-repeat h-screen"
         style={{ backgroundImage: `url(${uaeCard})`,
         backgroundSize: 'contain', 
-        backgroundPosition: '95% center', 
+        backgroundPosition: '85% center', 
         backgroundRepeat: 'no-repeat' ,
         
       }}
