@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import SectionCard from "../../Components/Home/SectionCard";
-import uaeCard from "../../assets/home2.jpg";
+import uaeCard from "../../assets/hm2.png";
 import SectionCard2 from "../../Components/Home/SectionCard2";
 import ser from  '../../assets/marketingMaker.jpg'
 import ser1 from '../../assets/maker.jpg'
