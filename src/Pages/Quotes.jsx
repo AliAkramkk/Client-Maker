@@ -13,12 +13,15 @@ const Quotes = () => {
       ];
     
       return (
-        <Marquee className='text-white'>
-          {quotes.map((quote, index) => (
-            <span key={index}>{quote}</span>
-          ))}
-        </Marquee>
-      );
-    };
+        <Marquee>
+      {quotes.map((quote, index) => (
+        <div key={index} className={index % 2 === 0 ? "quote" : "spaced-quote  font-semibold text-white text-lg"}>
+          {quote}
+        </div>
+      ))}
+    </Marquee>
+  );
+};
+
 
 export default Quotes
