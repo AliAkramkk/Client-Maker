@@ -93,14 +93,13 @@ const Home = () => {
 
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-lg hover:shadow-sky-400">
         <Link to= '/service'>
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-lg hover:shadow-sky-400">
   <img
     alt=""
     src={ser}
     className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105"
   />
-      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
@@ -117,16 +116,16 @@ const Home = () => {
     </div>
   </div>
 </article>
+      </Link>
       </div>
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
         <Link to= '/service'>
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser1}
     className="absolute inset-0 h-full w-full object-cover"
   />
-      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
@@ -143,16 +142,16 @@ const Home = () => {
     </div>
   </div>
 </article>
+          </Link>
       </div>
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
         <Link to= '/service'>
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser2}
     className="absolute inset-0 h-full w-full object-cover"
   />
-      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
@@ -169,16 +168,16 @@ const Home = () => {
     </div>
   </div>
 </article>
+        </Link>
       </div>
       <div className="p-4">
-      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
       <Link to= '/service'>
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
   <img
     alt=""
     src={ser3}
     className="absolute inset-0 h-full w-full object-cover"
   />
-      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
@@ -196,6 +195,7 @@ const Home = () => {
     </div>
   </div>
 </article>
+      </Link>
       </div>
       {/* Add more image divs as needed */}
    
