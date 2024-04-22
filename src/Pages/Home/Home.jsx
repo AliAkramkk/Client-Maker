@@ -66,7 +66,7 @@ const Home = () => {
               for your Business
                 
                  <span className=" text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950">
-               "GROWTH".
+               "GROWTH"
              </span>
               </strong>
             </h1>
