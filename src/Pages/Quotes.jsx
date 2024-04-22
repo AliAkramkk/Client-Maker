@@ -15,7 +15,7 @@ const Quotes = () => {
       return (
         <Marquee autoFill pauseOnHover speed={20}>
           {quotes.map((quote, index) => (
-            <span key={index} className='text-xs font-medium m-2 px-2.5 py-2.5 text-white'>{quote} </span>
+            <span key={index} className='text-white'>{quote} </span>
           ))}
         </Marquee>
       );
