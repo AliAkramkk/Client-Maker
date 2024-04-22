@@ -13,7 +13,7 @@ const Quotes = () => {
       ];
     
       return (
-        <Marquee>
+        <Marquee className='text-white'>
           {quotes.map((quote, index) => (
             <span key={index}>{quote}</span>
           ))}
