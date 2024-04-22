@@ -15,7 +15,7 @@ const Quotes = () => {
       return (
         <Marquee>
       {quotes.map((quote, index) => (
-        <div key={index} className={index % 2 === 0 ? "quote" : "spaced-quote  font-semibold text-white text-lg"}>
+       <div key={index} style={index % 2 === 0 ? { fontSize: '16px', marginRight: '20px', color: '#333', fontWeight: 'normal' } : { fontSize: '20px', marginRight: '50px', color: '#555', fontWeight: 'bold', }}>
           {quote}
         </div>
       ))}
