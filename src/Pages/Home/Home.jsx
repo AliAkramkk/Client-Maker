@@ -7,7 +7,7 @@ import SectionCard2 from "../../Components/Home/SectionCard2";
 import ser from  '../../assets/s5.png'
 import ser1 from '../../assets/s4.png'
 import ser2 from  '../../assets/s3.png'
-import ser3 from '../../assets/s2.png'
+import ser3 from '../../assets/creative.jpeg'
 import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
