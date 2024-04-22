@@ -45,51 +45,45 @@ const Home = () => {
   };
   return (
     <div className="bg-black">
-      <Navbar />
-      <section
-        className="relative bg-contain bg-center bg-no-repeat h-screen"
-        style={{ backgroundImage: `url(${uaeCard})`,
-        backgroundSize: 'contain', 
-        backgroundPosition: '85% 15%', 
-        backgroundRepeat: 'no-repeat' ,
-        
-      }}
-      >
-        {/* <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
+  <Navbar />
+  <section
+    className="relative bg-contain bg-center bg-no-repeat min-h-screen"
+    style={{
+      backgroundImage: `url(${uaeCard})`,
+      backgroundSize: 'contain',
+      backgroundPosition: '85% 15%',
+      backgroundRepeat: 'no-repeat',
+      padding: '0 20px', // Adjust padding to create space between content and image
+      maxWidth: '100vw', // Ensure the section doesn't exceed the viewport width
+    }}
+  >
+    <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
-      Opening a new era for your business
-      <br />
-      <strong className="block font-extrabold text-rose-700 font-serif text-7xl animate-spin-slow ... shadow-slate-950">
-        GROWTH
-      </strong>
-    </h1>
+    <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+      <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+        <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+          Opening a new era for your business
+          <br />
+          <strong className="block font-extrabold text-rose-700 font-serif text-7xl animate-spin-slow ... shadow-slate-950">
+            GROWTH
+          </strong>
+        </h1>
 
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed text-white ">
-              From all set-ups to optimizations, we provide you tailored
-              marketing support
-            </p>
+        <p className="mt-4 max-w-lg sm:text-xl/relaxed text-white">
+          From all set-ups to optimizations, we provide you tailored marketing support
+        </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
-            <Link className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 
-                hover:-translate-y-1 hover:scale-110 
-                duration-300 ... animate-bounce  ..."
-               to= "/contact" >LET US KNOW YOUR GOAL</Link>
-              {/* <a
-                href=""
-                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 
-                hover:-translate-y-1 hover:scale-110 
-                duration-300 ... animate-bounce  ..."
-              >
-                
-              </a> */}
-            </div>
-          </div>
+        <div className="mt-8 flex flex-wrap gap-4 text-center">
+          <Link
+            className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... animate-bounce  ..."
+            to="/contact"
+          >
+            LET US KNOW YOUR GOAL
+          </Link>
         </div>
-      </section>
-
+      </div>
+    </div>
+  </section>
       <SectionCard2 />
       <h1 className="text-4xl font-bold text-gray-800 mb-4 mt-8 text-center">
               Our Services </h1>
