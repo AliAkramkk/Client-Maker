@@ -1,19 +1,39 @@
 import React from "react";
 import section from "../../assets/boy1.png";
+import { Carousel } from "@material-tailwind/react";
+
 const SectionCard2 = () => {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10 lg:py-16">
-            <div className="relative h-64 sm:h-80 lg:h-full">
+            <Carousel className="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
                
                 src={section}
                 className="absolute inset-0 h-full w-full object-contain"
               />
-            </div>
+              <img
+                alt=""
+               
+                src={section}
+                className="absolute inset-0 h-full w-full object-contain"
+              />
+              <img
+                alt=""
+               
+                src={section}
+                className="absolute inset-0 h-full w-full object-contain"
+              />
+              <img
+                alt=""
+               
+                src={section}
+                className="absolute inset-0 h-full w-full object-contain"
+              />
+            </Carousel>
           </div>
 
           <div className="relative flex items-center bg-black">
