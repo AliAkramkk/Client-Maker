@@ -47,7 +47,7 @@ const Home = () => {
     <div className="bg-black">
       <Navbar />
       <section
-        className="relative bg-contain bg-center bg-no-repeat h-screen "
+        className="relative bg-contain bg-center bg-no-repeat h-screen ml-4"
         style={{ backgroundImage: `url(${uaeCard})`,
         backgroundSize: 'contain', 
         backgroundPosition: 'right center', 
