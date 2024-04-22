@@ -2,7 +2,7 @@ import React from "react";
 import section from "../../assets/boy1.png";
 import car1 from "../../assets/caro1.jpeg";
 import car2 from "../../assets/caro2.jpeg";
-import car3 from "../../assets/boy1.jpeg";
+import car3 from "../../assets/caro3.jpeg";
 
 import { Carousel } from "@material-tailwind/react";
 
