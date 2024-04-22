@@ -44,13 +44,13 @@ const Home = () => {
       "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
   };
   return (
-    <div className="bg-blue-100">
+    <div className="bg-black">
       <Navbar />
       <section
         className="relative bg-contain bg-center bg-no-repeat h-screen"
         style={{ backgroundImage: `url(${uaeCard})`,
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
+        backgroundSize: 'contain', 
+        backgroundPosition: 'right', 
         backgroundRepeat: 'no-repeat' ,
         
       }}
