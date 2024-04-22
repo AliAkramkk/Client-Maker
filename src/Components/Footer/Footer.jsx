@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/footer.png";
+import logo from "../../assets/navbar.png";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
    
-        <footer className="bg-blue-100  shadow dark:bg-gray-900 " >
+        <footer className="bg-black  shadow dark:bg-gray-900 " >
       <div className="w-full max-w-screen-xl mx-auto p-4 my-auto md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
@@ -48,7 +48,7 @@ const Footer = () => {
               style={{ cursor: "pointer" }}
             />
           </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
               <Link to="/about" className="hover:underline me-4 md:me-6">
                 About
@@ -72,7 +72,7 @@ const Footer = () => {
                 contact
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>
