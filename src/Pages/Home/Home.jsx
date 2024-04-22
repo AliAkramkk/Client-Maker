@@ -94,19 +94,19 @@ const Home = () => {
 {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
       <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-lg hover:shadow-sky-400">
+        <Link to= '/service'>
   <img
     alt=""
     src={ser}
     className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105"
   />
+      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
@@ -120,19 +120,19 @@ const Home = () => {
       </div>
       <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
+        <Link to= '/service'>
   <img
     alt=""
     src={ser1}
     className="absolute inset-0 h-full w-full object-cover"
   />
+      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
@@ -146,19 +146,19 @@ const Home = () => {
       </div>
       <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
+        <Link to= '/service'>
   <img
     alt=""
     src={ser2}
     className="absolute inset-0 h-full w-full object-cover"
   />
+      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
@@ -172,19 +172,20 @@ const Home = () => {
       </div>
       <div className="p-4">
       <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
+      <Link to= '/service'>
   <img
     alt=""
     src={ser3}
     className="absolute inset-0 h-full w-full object-cover"
   />
+      </Link>
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <Link to= '/service'>
+     
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
