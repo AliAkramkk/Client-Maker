@@ -6,25 +6,37 @@ const SectionCard2 = () => {
   return (
     <section>
       <div className="mx-auto max-w-screen-2xl py-8 sm:px-6 lg:px-8">
-        {/* <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-          <div className="relative z-10 lg:py-16"> */}
-          <Carousel className="rounded-xl">
-      <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-        alt="image 1"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        alt="image 2"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-        alt="image 3"
-        className="h-full w-full object-cover"
-      />
-    </Carousel>
+        <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+          <div className="relative z-10 lg:py-16">
+          <Carousel
+              className="relative h-64 sm:h-80 lg:h-full"
+              swipe={true} 
+              animation="fade" 
+              autoPlay={true} 
+              interval={5000} 
+              stopAutoPlayOnHover={false} 
+            >
+              <img
+                alt=""
+                src={section}
+                className="h-full w-full object-contain"
+              />
+              <img
+                alt=""
+                src={car1}
+                className="h-full w-full object-contain"
+              />
+              <img
+                alt=""
+                src={car2}
+                className="h-full w-full object-contain"
+              />
+              <img
+                alt=""
+                src={car3}
+                className="h-full w-full object-contain"
+              />
+            </Carousel>
           </div>
 
           <div className="relative flex items-center bg-black">
@@ -59,8 +71,8 @@ Whether you're a startup looking to make a splash or an established enterprise a
                 Get in Touch
               </a> */}
             </div>
-          {/* </div>
-        </div> */}
+          </div>
+        </div>
       </div>
     </section>
   );
