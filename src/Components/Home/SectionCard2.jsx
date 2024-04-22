@@ -1,5 +1,5 @@
 import React from "react";
-import section from "../../assets/boy.jpeg";
+import section from "../../assets/boy1.png";
 const SectionCard2 = () => {
   return (
     <section>
