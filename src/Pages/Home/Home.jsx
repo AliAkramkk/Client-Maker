@@ -62,12 +62,12 @@ const Home = () => {
             <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
             Opening a new era for 
               <strong className="block font-extrabold "> 
-              
+              {" "}
                your Business
                 
                  <span className=" text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950">
                "GROWTH"
-             </span>
+             </span>{" "}
               </strong>
             </h1>
 
