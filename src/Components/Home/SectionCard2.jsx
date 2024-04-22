@@ -35,12 +35,12 @@ Welcome to TheClientsMaker.com, a leading digital marketing and business develop
 <p className=" text-black font-medium">With a team of seasoned professionals boasting a wealth of experience and a deep understanding of the ever-evolving digital landscape, we pride ourselves on delivering innovative solutions that exceed expectations. Our relentless commitment to excellence, coupled with our passion for creativity, sets us apart as leaders in the industry.
 
 </p>
-<p className=" text-black font-medium">
+{/* <p className=" text-black font-medium">
 But we're not just about creating impressive digital assets; we're also dedicated to driving meaningful business growth for our clients. Through strategic business development initiatives, we help businesses unlock their full potential and achieve sustainable success in today's competitive market.
 </p>
 <p className=" text-black font-medium">
 Whether you're a startup looking to make a splash or an established enterprise aiming to stay ahead of the curve, TheClientsMaker.com is your trusted partner for navigating the digital landscape with confidence. Join us on the journey to digital excellence and let's make your business vision a reality.
-</p>
+</p> */}
               {/* <a
                 href="#"
                 className="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 pointer-events-none ..."
