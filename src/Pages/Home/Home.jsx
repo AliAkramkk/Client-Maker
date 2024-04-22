@@ -63,10 +63,10 @@ const Home = () => {
             Opening a new era  for
               <strong className="block font-extrabold ">
                 {" "}
-                your business growth.
+                your Business 
                 <span className=" text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950">
                   {" "}
-                 
+                  GROWTH.
                 </span>{" "}
               </strong>
             </h1>
