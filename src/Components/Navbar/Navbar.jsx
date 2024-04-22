@@ -21,7 +21,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="logo"
-              width={0}
+              width={1}
               height={60}
               className="w-[150px] h-[80px] transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
             />
