@@ -4,7 +4,7 @@ import car1 from "../../assets/caro1.jpeg";
 import car2 from "../../assets/caro2.jpeg";
 import car3 from "../../assets/caro3.jpeg";
 
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, CarouselItem } from "@material-tailwind/react";
 
 const SectionCard2 = () => {
   return (
@@ -14,32 +14,40 @@ const SectionCard2 = () => {
           <div className="relative z-10 lg:py-16">
           <Carousel
               className="relative h-64 sm:h-80 lg:h-full"
-              swipe={true} 
-              animation="fade" 
-              autoPlay={true} 
-              interval={5000} 
-              stopAutoPlayOnHover={false} 
+              swipe={true} // Enable swipe for touch devices
+              animation="fade" // Set animation type to fade
+              autoPlay={true} // Enable autoplay
+              interval={5000} // Set autoplay interval to 5 seconds
+              stopAutoPlayOnHover={false} // Keep autoplay even when hovered
             >
-              <img
-                alt=""
-                src={section}
-                className="h-full w-full object-contain"
-              />
-              <img
-                alt=""
-                src={car1}
-                className="h-full w-full object-contain"
-              />
-              <img
-                alt=""
-                src={car2}
-                className="h-full w-full object-contain"
-              />
-              <img
-                alt=""
-                src={car3}
-                className="h-full w-full object-contain"
-              />
+              <CarouselItem>
+                <img
+                  alt=""
+                  src={section}
+                  className="h-full w-full object-contain"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  alt=""
+                  src={car1}
+                  className="h-full w-full object-contain"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  alt=""
+                  src={car2}
+                  className="h-full w-full object-contain"
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <img
+                  alt=""
+                  src={car3}
+                  className="h-full w-full object-contain"
+                />
+              </CarouselItem>
             </Carousel>
           </div>
 
