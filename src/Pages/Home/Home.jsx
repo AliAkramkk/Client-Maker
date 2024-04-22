@@ -8,6 +8,7 @@ import ser from  '../../assets/digit2-remove.png'
 import ser1 from '../../assets/content-remov.png'
 import ser2 from  '../../assets/interior-remove.png'
 import ser3 from '../../assets/digit1-remov.png'
+import ser4 from '../../assets/seo-remove.png'
 import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -103,15 +104,12 @@ const Home = () => {
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
-      <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+      {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
-        <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+        <h2 className="mt-0.5 text-lg text-white">Digital Marketing</h2>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-        atque dignissimos. Molestias explicabo corporis voluptatem?
+      Unlock your business's digital potential with TheClientsMaker.com. We specialize in crafting tailored digital strategies to elevate your brand and drive results. From captivating website design to engaging content creation, we offer a comprehensive suite of digital marketing services. Let us help you thrive in the online landscape.
       </p>
     </div>
   </div>
@@ -129,15 +127,12 @@ const Home = () => {
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
-      <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+      {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
-        <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+        <h2 className="mt-0.5 text-lg text-white">Content Creation</h2>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-        atque dignissimos. Molestias explicabo corporis voluptatem?
+      Empower your brand with expert content creation from TheClientsMaker.com. Our team specializes in crafting compelling content tailored to your audience. From blog posts to social media campaigns, we offer a range of services to enhance your online presence. Let us create content that engages and inspires your audience.
       </p>
     </div>
   </div>
@@ -155,15 +150,13 @@ const Home = () => {
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
-      <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+      {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
-        <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+        <h2 className="mt-0.5 text-lg text-white">Interior Designing</h2>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-        atque dignissimos. Molestias explicabo corporis voluptatem?
+        
+Transform your space with our expert interior design services at TheClientsMaker.com. From conceptualization to execution, we specialize in creating stunning interiors tailored to your style and needs. Let us bring your vision to life and elevate your space to new heights of beauty and functionality.
       </p>
     </div>
   </div>
@@ -181,16 +174,38 @@ const Home = () => {
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
-      <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+      {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
      
-        <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+      <h2 className="mt-0.5 text-lg text-white">Graphic Designing</h2>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-        atque dignissimos. Molestias explicabo corporis voluptatem?
+      Elevate your brand with captivating graphic design from TheClientsMaker.com. Our team specializes in creating visually stunning graphics that leave a lasting impression. From logos to marketing materials, we offer a range of services to help your brand stand out. Let us bring your ideas to life with creativity and precision.
+      </p>
+    </div>
+  </div>
+</article>
+      </Link>
+      </div>
+      <div className="p-4">
+      <Link to= '/service'>
+      <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
+  <img
+    alt=""
+    src={ser4}
+    className="absolute inset-0 h-full w-full object-cover"
+  />
+
+  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+    <div className="p-4 sm:p-6">
+      {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
+
+     
+      <h2 className="mt-0.5 text-lg text-white">SEO</h2>
+
+      <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+        
+Boost your online visibility with expert SEO services from TheClientsMaker.com. We specialize in optimizing your website to rank higher on search engines and attract more organic traffic. From keyword research to on-page optimization, we offer a comprehensive approach to improving your search engine rankings. Let us help your business reach its full potential online.
       </p>
     </div>
   </div>
