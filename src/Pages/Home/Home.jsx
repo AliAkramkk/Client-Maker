@@ -48,7 +48,10 @@ const Home = () => {
       <Navbar />
       <section
         className="relative bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${uaeCard})` }}
+        style={{ backgroundImage: `url(${uaeCard})`,
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat' }}
       >
         {/* <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
 
