@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+// import { Link } from "react-router-dom";
 import logo from "../../assets/navbar.png";
 const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
   // useEffect(() => {
     // Function to check if user has scrolled down 20px from the top
     // function handleScroll() {

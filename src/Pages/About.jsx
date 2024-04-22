@@ -6,15 +6,15 @@ import Footer from '../Components/Footer/Footer';
 const About = () => {
   return (
     <>
-    <div className="bg-gray-400">
+    <div className="bg-gray-900">
       <Navbar />
       <div
         className="min-h-screen flex flex-col items-start justify-start bg-cover bg-center  "
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        // style={{
+        //   backgroundImage: `url(${backgroundImage})`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
       >
         {/* <div className='py-16'>
         <h1 className="text-center text-gray-100 justify-center text-5xl p-2 font-extrabold">
@@ -23,11 +23,11 @@ const About = () => {
         </div> */}
         
         <div className="p-3 text-white flex flex-col md:flex-row items-center md:items-start">
-          <img
+          {/* <img
             src={logo}
             alt="Let's Cook Logo"
             className="mb-4 max-w-xs md:mr-6 md:mb-0 transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
-          />
+          /> */}
           <h3 className="text-xl md:text-2xl lg:text-4xl mt-4 md:mt-20 mb-20 text-center md:text-left">
             Welcome to <strong className='text-white'>Clients </strong> <span className='text-red-700 font-bold'>Maker</span>. Your Digital Sales Man.
           </h3>
