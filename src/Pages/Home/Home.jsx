@@ -4,10 +4,10 @@ import Navbar from "../../Components/Navbar/Navbar";
 import SectionCard from "../../Components/Home/SectionCard";
 import uaeCard from "../../assets/home2.jpg";
 import SectionCard2 from "../../Components/Home/SectionCard2";
-import ser from  '../../assets/s5.png'
-import ser1 from '../../assets/s4.png'
-import ser2 from  '../../assets/s3.png'
-import ser3 from '../../assets/creative.jpeg'
+import ser from  '../../assets/digit1.png'
+import ser1 from '../../assets/content.png'
+import ser2 from  '../../assets/interior.png'
+import ser3 from '../../assets/seo.png'
 import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
