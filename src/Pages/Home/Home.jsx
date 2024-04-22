@@ -5,9 +5,9 @@ import SectionCard from "../../Components/Home/SectionCard";
 import uaeCard from "../../assets/home2.jpg";
 import SectionCard2 from "../../Components/Home/SectionCard2";
 import ser from  '../../assets/digit2-remove.png'
-import ser1 from '../../assets/content-remove.png'
+import ser1 from '../../assets/content-remov.png'
 import ser2 from  '../../assets/interior-remove.png'
-import ser3 from '../../assets/digit1-remove.png'
+import ser3 from '../../assets/digit1-remov.png'
 import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
