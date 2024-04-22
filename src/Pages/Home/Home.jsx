@@ -61,13 +61,10 @@ const Home = () => {
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
             Opening a new era  for
-              <strong className="block font-extrabold ">
-               
-                your Business 
-                <span className=" text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950">
-               
-                  GROWTH.
-                </span>
+              <strong className="block font-extrabold "> 
+                your Business <span className=" text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950">
+               GROWTH.
+             </span>
               </strong>
             </h1>
 
