@@ -1,5 +1,9 @@
 import React from "react";
 import section from "../../assets/boy1.png";
+import car1 from "../../assets/caro1.jpeg";
+import car2 from "../../assets/caro2.jpeg";
+import car3 from "../../assets/boy1.jpeg";
+
 import { Carousel } from "@material-tailwind/react";
 
 const SectionCard2 = () => {
@@ -8,30 +12,29 @@ const SectionCard2 = () => {
       <div className="mx-auto max-w-screen-2xl py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10 lg:py-16">
-            <Carousel className="relative h-64 sm:h-80 lg:h-full">
+          <Carousel
+              className="relative h-64 sm:h-80 lg:h-full"
+              swipe={true} // Enable swipe for touch devices
+            >
               <img
                 alt=""
-               
                 src={section}
-                className="absolute inset-0 h-full w-full object-contain"
+                className="h-full w-full object-contain"
               />
               <img
                 alt=""
-               
-                src={section}
-                className="absolute inset-0 h-full w-full object-contain"
+                src={car1}
+                className="h-full w-full object-contain"
               />
               <img
                 alt=""
-               
-                src={section}
-                className="absolute inset-0 h-full w-full object-contain"
+                src={car2}
+                className="h-full w-full object-contain"
               />
               <img
                 alt=""
-               
-                src={section}
-                className="absolute inset-0 h-full w-full object-contain"
+                src={car3}
+                className="h-full w-full object-contain"
               />
             </Carousel>
           </div>
