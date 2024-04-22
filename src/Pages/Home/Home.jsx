@@ -104,9 +104,9 @@ const Home = () => {
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <a href="#">
+      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </a>
+      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
@@ -130,9 +130,9 @@ const Home = () => {
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <a href="#">
+      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </a>
+      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
@@ -156,9 +156,9 @@ const Home = () => {
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <a href="#">
+      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </a>
+      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
@@ -182,9 +182,9 @@ const Home = () => {
     <div className="p-4 sm:p-6">
       <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
 
-      <a href="#">
+      <Link to= '/service'>
         <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-      </a>
+      </Link>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
