@@ -3,34 +3,34 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/navbar.png";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
+  // useEffect(() => {
     // Function to check if user has scrolled down 20px from the top
-    function handleScroll() {
-      if (window.scrollY > 20) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    }
+    // function handleScroll() {
+    //   if (window.scrollY > 20) {
+    //     setIsVisible(true);
+    //   } else {
+    //     setIsVisible(false);
+    //   }
+    // }
 
     // Event listener for scrolling
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
 
     // Cleanup
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []); // Run only on mount and unmount
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []); // Run only on mount and unmount
 
   // Function to smoothly scroll to top
-  function scrollToTop() {
-    const scrollStep = -window.scrollY / (1000 / 15);
-    const scrollInterval = setInterval(() => {
-      if (window.scrollY !== 0) {
-        window.scrollBy(0, scrollStep);
-      } else {
-        clearInterval(scrollInterval);
-      }
-    }, 15);
-  }
+  // function scrollToTop() {
+  //   const scrollStep = -window.scrollY / (1000 / 15);
+  //   const scrollInterval = setInterval(() => {
+  //     if (window.scrollY !== 0) {
+  //       window.scrollBy(0, scrollStep);
+  //     } else {
+  //       clearInterval(scrollInterval);
+  //     }
+  //   }, 15);
+  // }
 
   return (
    
