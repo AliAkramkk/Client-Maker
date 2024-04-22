@@ -119,7 +119,7 @@ const SectionCard = () => {
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              Digital campaigns
+              We have the system for you
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
