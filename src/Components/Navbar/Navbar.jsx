@@ -26,7 +26,7 @@ const Navbar = () => {
               className="w-[150px] h-[80px] transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
             /> */}
              <h3 className="ml-10 block font-extrabold text-white mt-6 text-xl font-serif">
-              TheClients<span className="text-rose-700"> Maker</span><br />
+              theclientsmaker<span className="text-rose-700">.com</span><br />
               <p className="text-white text-xs italic mt-1"> <em> Your digital salesman</em></p>
             </h3>
           </a>
