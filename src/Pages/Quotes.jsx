@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Marquee from "react-fast-marquee"; 
+
 const Quotes = () => {
     const quotes = [
         "The only place where success comes before work is in the dictionary. - Vidal Sassoon",
@@ -10,15 +11,24 @@ const Quotes = () => {
         "The way to get started is to quit talking and begin doing. - Walt Disney",
         "Success usually comes to those who are too busy to be looking for it. - Henry David Thoreau",
         "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer"
-      ];
-    
-      return (
-        <Marquee autoFill pauseOnHover speed={20}>
-          {quotes.map((quote, index) => (
-            <span key={index} className='text-lg font-medium m-2 px-2.5 py-2.5 text-white'>{quote} </span>
-          ))}
-        </Marquee>
-      );
-    };
+    ];
 
-export default Quotes
+    
+
+    return (
+        <Marquee autoFill pauseOnHover speed={30}>
+            {quotes.map((quote, index) => {
+                const [quoteText, author] = quote.split(' - ');
+
+                return (
+                    <div key={index} className="text-white font-medium m-10 bg-gradient-to-t from-gray-900/50 to-gray-900/25 p-4 rounded-xl">
+                        <div className="inline-block">&quot;{quoteText}&quot;</div>
+                        <div className="text-base font-bold p-2">{author}</div> {/* Display author */}
+                    </div>
+                );
+            })}
+        </Marquee>
+    );
+};
+
+export default Quotes;
