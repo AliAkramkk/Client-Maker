@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import ImageSlider from "./Pages/Image/ImageSlider";
 import Service1 from "./Pages/Service1";
+import ContentMarketing from "./Pages/ContentMarketing";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path = "/service" element={<Service />} />
         <Route path = "/about" element={<About />} />
         <Route path = "/image" element={<ImageSlider />} />
+        <Route path = "/content" element={<ContentMarketing />} />
       </Route>
     </Routes>
   );
