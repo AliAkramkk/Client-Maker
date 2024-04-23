@@ -18,14 +18,14 @@ const Navbar = () => {
       <header className=" py-2 absolute z-10 w-full">
         <nav className="flex justify-between items-center max-container">
           <a href="/" className="flex items-center ">
-            <img
+            {/* <img
               src={logo}
               alt="logo"
               width={1}
               height={60}
               className="w-[150px] h-[80px] transition duration-300 ease-in-out transform hover:scale-125 animate-spin"
-            />
-            <h3 className="-ml-10 block font-extrabold text-white -mt-6 text-xl font-serif">
+            /> */}
+             <h3 className="ml-10 block font-extrabold text-white mt-6 text-xl font-serif">
               TheClients<span className="text-rose-700"> Maker</span><br />
               <p className="text-white text-xs italic mt-1"> <em> Your digital salesman</em></p>
             </h3>
