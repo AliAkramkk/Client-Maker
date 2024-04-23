@@ -1,5 +1,6 @@
 import React from 'react'
-import ser from  '../../assets/marketingMaker.jpg'
+import ser from  '../../assets/digit1-remov.png'
+// import ser from  '../../assets/contentM4.png'
 const ServiceCard1 = () => {
   return (
     <section>
@@ -10,14 +11,14 @@ const ServiceCard1 = () => {
           alt=""
           // src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
           src={ser}
-          className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-125"
+          className="absolute inset-0 h-full w-full object-contain transition duration-300 ease-in-out transform hover:scale-125"
         />
         
         
       </div>
 
       <div className="lg:py-24">
-        <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Customized Marketing Maker</h2>
+        <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Content Creation</h2>
 
         <p className="mt-4 text-gray-600">
         Our customized marketing solutions are designed to elevate your brand visibility and drive meaningful results. Whether it's through SEO, social media marketing, email campaigns, or influencer partnerships, we craft personalized strategies to reach your target audience and maximize your ROI.
