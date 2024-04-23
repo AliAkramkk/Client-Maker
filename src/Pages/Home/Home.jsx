@@ -53,7 +53,7 @@ const Home = () => {
           backgroundSize: "contain",
           backgroundPosition: "85% 15%",
           backgroundRepeat: "no-repeat",
-          padding: "0 20px", // Adjust padding to create space between content and image
+          padding: "0 5px", // Adjust padding to create space between content and image
           maxWidth: "100vw", // Ensure the section doesn't exceed the viewport width
         }}
       >
@@ -85,7 +85,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <SectionCard2 />
+      <SectionCard2 style={{ paddingTop: "3rem", paddingBottom: "2rem" }} />
       <h1 className="text-4xl font-bold text-gray-800 mb-4 mt-8 text-center">
         Our Services{" "}
       </h1>
