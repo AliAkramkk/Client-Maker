@@ -317,13 +317,7 @@ const Home = () => {
                   <h2 className="mt-0.5 text-lg text-white">E Commerce Listing</h2>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Boost your online visibility with expert SEO services from
-                    TheClientsMaker.com. We specialize in optimizing your
-                    website to rank higher on search engines and attract more
-                    organic traffic. From keyword research to on-page
-                    optimization, we offer a comprehensive approach to improving
-                    your search engine rankings. Let us help your business reach
-                    its full potential online.
+                  At TheClientsMaker.com, we specialize in creating high-converting e-commerce listings that attract customers and drive sales. With our expertise, we'll optimize your product listings to maximize visibility, increase conversions, and grow your online business.
                   </p>
                 </div>
               </div>
