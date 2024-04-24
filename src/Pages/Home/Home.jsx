@@ -101,7 +101,7 @@ const Home = () => {
       <Slider {...settings}>
         {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
         <div className="p-4">
-          <Link to="/serv">
+          <Link to="/email">
             <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-lg hover:shadow-sky-400">
               <img
                 alt=""
@@ -114,7 +114,7 @@ const Home = () => {
                   {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
                   <h2 className="mt-0.5 text-lg text-white">
-                    Digital Marketing
+                   Email Marketing
                   </h2>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
@@ -175,7 +175,7 @@ const Home = () => {
                   {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
                   <h2 className="mt-0.5 text-lg text-white">
-                    Interior Designing
+                   Web Development
                   </h2>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">

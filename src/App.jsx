@@ -10,6 +10,7 @@ import Service1 from "./Pages/Service1";
 import ContentMarketing from "./Pages/ContentMarketing";
 import SeoPage from "./Pages/SeoPage";
 import WebDevelopment from "./Pages/WebDevelopment";
+import EmailMarketing from "./Pages/EmailMarketing";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path = "/content" element={<ContentMarketing />} />
         <Route path = "/seo" element={<SeoPage />} />
         <Route path = "/web" element={<WebDevelopment />} />
+        <Route path = "/email" element={<EmailMarketing />} />
       </Route>
     </Routes>
   );

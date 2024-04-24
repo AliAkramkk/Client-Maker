@@ -1,17 +1,17 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import img1 from '../assets/seo.jpeg';
-import img2 from '../assets/seo2.jpeg';
-import img3 from '../assets/seo3.jpeg';
-import img4 from '../assets/seo4.jpeg';
-
+import img1 from '../assets/email1.jpeg';
+import img2 from '../assets/email2.jpeg';
+import img3 from '../assets/email3.jpeg';
+import img4 from '../assets/email4.jpeg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import VideoPlayer from '../Components/VideoPlayer';
 
-const SeoPage = () => {
+const EmailMarketing = () => {
+
     const images = [img1, img2, img3 ,img4];
     const videoUrl = 'https://www.youtube.com/watch?v=2tV0V2PDRrQ';
   
@@ -24,6 +24,7 @@ const SeoPage = () => {
       autoplay: true,
       autoplaySpeed: 3000
     };
+
   return (
     <>
     <Navbar />
@@ -42,7 +43,7 @@ const SeoPage = () => {
             <VideoPlayer videoUrl={videoUrl} />
           </div>
           <div className="lg:w-1/2 lg:pl-8">
-            <h1 className="text-3xl font-medium mb-4">SEO</h1>
+            <h1 className="text-3xl font-medium mb-4">Email Marketing</h1>
             <p className="text-lg leading-relaxed">
               At TheClientsMaker.com, we understand the power of compelling content in capturing the attention of your audience and driving meaningful engagement. Our dedicated team of content creators is here to help you craft content that resonates with your target audience and achieves your business goals.
             </p>
@@ -75,4 +76,4 @@ const SeoPage = () => {
   )
 }
 
-export default SeoPage
+export default EmailMarketing
