@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { motion } from "framer-motion"
 import Navbar from "../../Components/Navbar/Navbar";
 import SectionCard from "../../Components/Home/SectionCard";
 import uaeCard from "../../assets/home2.jpg";
