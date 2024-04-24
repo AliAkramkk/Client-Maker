@@ -60,21 +60,21 @@ const Navbar = () => {
               </svg>
             </motion.button>
             <motion.ul 
-              className={`absolute z-50 top-full left-0 right-0 bg-white ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              className={`absolute z-50 top-full left-0 right-0 rounded-xl bg-white ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none '}`}
               animate={isOpen ? "open" : "closed"}
               variants={variants}
-              style={{ left: isOpen ? '-20px' : 0 }} // Adjust left position here
+              style={{ left: isOpen ? '-40px' : 0 }} // Adjust left position here
             >
-              <li className="font-montserrat leading-normal text-lg">
+              <li className="font-montserrat leading-normal text-lg p-2">
                 <Link to="/">Home</Link>
               </li>
-              <li className="font-montserrat leading-normal text-lg">
+              <li className="font-montserrat leading-normal text-lg p-2">
                 <Link to="/about">About</Link>
               </li>
-              <li className="font-montserrat leading-normal text-lg">
+              <li className="font-montserrat leading-normal text-lg p-2">
                 <Link to="/contact">Contact</Link>
               </li>
-              <li className="font-montserrat leading-normal text-lg">
+              <li className="font-montserrat leading-normal text-lg p-2">
                 <Link to="/service">Services</Link>
               </li>
             </motion.ul>
