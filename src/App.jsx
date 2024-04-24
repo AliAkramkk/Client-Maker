@@ -8,6 +8,8 @@ import About from "./Pages/About";
 import ImageSlider from "./Pages/Image/ImageSlider";
 import Service1 from "./Pages/Service1";
 import ContentMarketing from "./Pages/ContentMarketing";
+import SeoPage from "./Pages/SeoPage";
+import WebDevelopment from "./Pages/WebDevelopment";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path = "/about" element={<About />} />
         <Route path = "/image" element={<ImageSlider />} />
         <Route path = "/content" element={<ContentMarketing />} />
+        <Route path = "/seo" element={<SeoPage />} />
+        <Route path = "/web" element={<WebDevelopment />} />
       </Route>
     </Routes>
   );

@@ -162,7 +162,7 @@ const Home = () => {
           </Link>
         </div>
         <div className="p-4">
-          <Link to="/service">
+          <Link to="/web">
             <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
               <img
                 alt=""
@@ -222,7 +222,7 @@ const Home = () => {
           </Link>
         </div>
         <div className="p-4">
-          <Link to="/service">
+          <Link to="/seo">
             <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
               <img
                 alt=""
