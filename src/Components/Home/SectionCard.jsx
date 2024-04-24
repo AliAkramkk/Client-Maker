@@ -1,7 +1,7 @@
 import React from "react";
 import target from "../../assets/steps.gif";
 import phone from "../../assets/24-hours-support.gif";
-// import notebook from "../../assets/no.gif";
+
 import handshake from "../../assets/funnel.gif";
 import support from "../../assets/strategy.gif";
 import presentation from "../../assets/presentation.gif";
@@ -16,11 +16,7 @@ const SectionCard = () => {
             Our Features
            </h2>
            
-          {/* <p className="mt-4 text-gray-300">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
-            fugit consequuntur saepe laborum.
-          </p> */}
+          
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
@@ -34,14 +30,12 @@ const SectionCard = () => {
               className="size-10 text-pink-500 bg-gray-900"
             />
 
-            <h2 className="mt-4 text-xl font-bold text-gray-900">
-              Our system
+            <h2 className="mt-4 text-xl font-bold text-white">
+            Elevating Your Business to New Heights
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            At TheClientsMaker.com, we've developed a cutting-edge system designed to propel your business forward. With a seamless blend of innovation and reliability, our platform empowers you to navigate the digital landscape with ease.
             </p>
           </a>
 
@@ -56,13 +50,11 @@ const SectionCard = () => {
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              Digital campaigns
+              Lead the Way
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            At TheClientsMaker.com, we're proud of our extensive track record of success. With a history of delivering outstanding results for our clients, you can trust us to take your business to new heights.
             </p>
           </a>
 
@@ -77,13 +69,11 @@ const SectionCard = () => {
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              Digital campaigns
+             Funel for You
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            At TheClientsMaker.com, we embrace a funnel-based business model designed to optimize your success and streamline your growth we help businesses like yours attract, engage, and retain customers more effectively
             </p>
           </a>
 
@@ -98,13 +88,12 @@ const SectionCard = () => {
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              Digital campaigns
+             
+             We are Here
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            Need assistance at any hour of the day or night? Our dedicated support team is here to help. Whether you have a question, encounter an issue, or need urgent assistance, we're just a message or call away.
             </p>
           </a>
 
@@ -119,13 +108,11 @@ const SectionCard = () => {
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              We have the system for you
+            Your Winning Strategy Starts Here
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            At TheClientsMaker.com, we're not just here to give advice; we're here to help you win. Let's work together to develop a winning strategy that propels your business to new heights of success..
             </p>
           </a>
 
@@ -140,25 +127,16 @@ const SectionCard = () => {
             />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              Digital campaigns
+            Your Pathway to Achievement Starts Here
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            We're not afraid to think outside the box and explore innovative solutions to drive your business forward. Whether it's implementing cutting-edge technologies or pioneering new strategies, we're always one step ahead.
             </p>
           </a>
         </div>
 
-        {/* <div className="mt-12 text-center"> */}
-          {/* <a
-            href="#"
-            className="inline-block rounded  bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
-          >
-            Get Started Today
-          </a> */}
-        {/* </div> */}
+        
       </div>
     </section>
   );

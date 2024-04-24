@@ -19,6 +19,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import Quotes from "../Quotes";
+import SectionCard3 from "../../Components/Home/SectionCard3";
+import SectionCard4 from "../../Components/Home/SectionCard4";
 const Home = () => {
   const settings = {
     dots: true,
@@ -345,9 +347,9 @@ const Home = () => {
         {/* </div> */}
       </Slider>
     
-
+<SectionCard3/>
       <SectionCard />
-
+<SectionCard4/>
       
       <Quotes />
       <Footer />
