@@ -10,7 +10,7 @@ import ser2 from "../../assets/web3.jpeg";
 import ser3 from "../../assets/wats2.png";
 import ser4 from "../../assets/seo4.jpeg";
 import ser5 from "../../assets/googled2.png";
-import ser6 from "../../assets/Meta.png";
+import ser6 from "../../assets/Meta1.png";
 import ser7 from "../../assets/ecommerce3.png";
 import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
