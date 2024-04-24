@@ -16,7 +16,7 @@ const About = () => {
           />
           <h3 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left">
             <strong className='text-white'>theclientsmaker </strong>
-            <span className='text-red-700 font-bold'>.com</span>.
+            <span className='text-red-700 font-bold'>.com</span>
             <br />
             <span className='text-base font-sans'></span>
           </h3>
