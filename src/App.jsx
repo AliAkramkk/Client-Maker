@@ -11,6 +11,8 @@ import ContentMarketing from "./Pages/ContentMarketing";
 import SeoPage from "./Pages/SeoPage";
 import WebDevelopment from "./Pages/WebDevelopment";
 import EmailMarketing from "./Pages/EmailMarketing";
+import WhatsappApi from "./Pages/WhatsappApi";
+import GoogleAd from "./Pages/GoogleAd";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path = "/seo" element={<SeoPage />} />
         <Route path = "/web" element={<WebDevelopment />} />
         <Route path = "/email" element={<EmailMarketing />} />
+        <Route path = "/whatsapp" element={<WhatsappApi />} />
+        <Route path = "/google" element={<GoogleAd />} />
       </Route>
     </Routes>
   );

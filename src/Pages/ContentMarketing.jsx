@@ -7,7 +7,7 @@ import img3 from '../assets/contentM5.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import VideoPlayer from '../Components/VideoPlayer'; // Import VideoPlayer component
+import VideoPlayer from '../Components/VideoPlayer'; 
 
 const ContentMarketing = () => {
   const images = [img1, img2, img3];
