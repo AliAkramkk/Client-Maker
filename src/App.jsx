@@ -13,6 +13,8 @@ import WebDevelopment from "./Pages/WebDevelopment";
 import EmailMarketing from "./Pages/EmailMarketing";
 import WhatsappApi from "./Pages/WhatsappApi";
 import GoogleAd from "./Pages/GoogleAd";
+import MetaAd from "./Pages/MetaAd";
+import EcommerceListing from "./Pages/EcommerceListing";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path = "/email" element={<EmailMarketing />} />
         <Route path = "/whatsapp" element={<WhatsappApi />} />
         <Route path = "/google" element={<GoogleAd />} />
+        <Route path = "/meta" element={<MetaAd />} />
+        <Route path = "/ecom" element={<EcommerceListing />} />
       </Route>
     </Routes>
   );

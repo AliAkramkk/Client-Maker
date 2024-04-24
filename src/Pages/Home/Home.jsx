@@ -11,6 +11,7 @@ import ser3 from "../../assets/wats2.png";
 import ser4 from "../../assets/seo4.jpeg";
 import ser5 from "../../assets/googled2.png";
 import ser6 from "../../assets/Meta.png";
+import ser7 from "../../assets/ecommerce3.png";
 import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -310,11 +311,11 @@ const Home = () => {
           </Link>
         </div>
         <div className="p-4">
-          <Link to="/service">
+          <Link to="/ecom">
             <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
               <img
                 alt=""
-                src={ser4}
+                src={ser7}
                 className="absolute inset-0 h-full w-full object-cover"
               />
 
@@ -322,7 +323,7 @@ const Home = () => {
                 <div className="p-4 sm:p-6">
                   {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
 
-                  <h2 className="mt-0.5 text-lg text-white">SEO</h2>
+                  <h2 className="mt-0.5 text-lg text-white">E Commerce Listing</h2>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
                     Boost your online visibility with expert SEO services from
