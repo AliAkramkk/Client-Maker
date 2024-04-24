@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import service from '../assets/ser4.jpg'
+import logo from '../assets/servi3.png'
 import ServiceCard1 from '../Components/Service/ServiceCard1'
 import ServiceCard2 from '../Components/Service/ServiceCard2'
 import ServiceCard3 from '../Components/Service/ServiceCard3'
@@ -12,27 +12,21 @@ const Service = () => {
   return (
     <div className='bg-black'>
       <Navbar />
-      <section
-        className="relative bg-cover bg-center"
-        // style={{
-        //   backgroundImage: `url(${service})`,
-        //   height: '400px', 
-        // }}
-      >
-        {/* Remove the gray overlay in the mobile menu */}
-        {/* <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div> */}
-
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-96 lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
-             Your Solutions are
-              <span className="text-rose-700 font-serif text-7xl animate-spin ... shadow-slate-950 text-center">
-                Here
-              </span>
-            </h1>
-          </div>
+      <div className="flex flex-col items-center justify-start mt-16">
+        <div className="p-6 text-white flex flex-col items-center md:flex-row justify-center md:justify-start">
+          <img
+            src={logo}
+            alt="TheClientsMaker Logo"
+            className="mb-4 max-w-xs md:mr-6 md:mb-0"
+          />
+          <h3 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left">
+            <strong className='text-white'>your digital salesman </strong>
+            <span className='text-red-700 font-bold'></span>
+            <br />
+            <span className='text-base font-sans'></span>
+          </h3>
         </div>
-      </section>
+        </div>
 
       <h1 className="text-4xl font-bold text-gray-900 mb-4 mt-4 text-center">
         Some of our services

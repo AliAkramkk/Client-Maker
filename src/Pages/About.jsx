@@ -24,7 +24,7 @@ const About = () => {
         <div className="bg p-8 text-white max-w-screen-lg">
           <p className="text-lg md:text-xl lg:text-2xl mb-4">Our Mission</p>
           <p className="mb-4">
-            <strong className='text-xl font-bold'>theclientmaker</strong>
+            <strong className='text-xl font-bold'>theclientsmaker</strong>
             <strong className='text-xl font-bold text-red-800'>.com </strong>
             a leading digital marketing and business development agency nestled
             in the vibrant landscape of Dubai. We specialize in crafting
