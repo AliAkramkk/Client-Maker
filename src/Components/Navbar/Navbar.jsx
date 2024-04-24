@@ -4,8 +4,8 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 
 const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
+  open: { opacity: 1, y: 0 },
+  closed: { opacity: 0, y: "-100%" },
 }
 
 const Navbar = () => {
@@ -16,9 +16,9 @@ const Navbar = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const navbarStyle = {
-    background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
-  };
+  // const navbarStyle = {
+  //   background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
+  // };
 
   return (
     <div className="flex bg-slate-700">
@@ -48,9 +48,9 @@ const Navbar = () => {
           <motion.nav
             animate={isOpen ? "open" : "closed"}
             variants={variants}
-            className="lg:hidden"
+            className="lg:hidden relative"
           >
-            <svg
+            <motion.svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -58,16 +58,18 @@ const Navbar = () => {
               stroke="currentColor"
               className="w-10 h-10 lg:hidden cursor-pointer"
               onClick={() => setIsOpen(isOpen => !isOpen)}
+              style={{ background: isOpen ? 'white' : 'transparent', borderRadius: '50%', padding: '8px' }}
             >
+              <circle cx="12" cy="12" r="10" />
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
               />
-            </svg>
+            </motion.svg>
             <motion.ul 
-              className="absolute z-50 top-16 left-0 right-0 bg-gray-800"
-              style={navbarStyle}
+              className="absolute z-50 top-0 left-0 right-0 bg-white"
+              // style={navbarStyle}
               animate={isOpen ? "open" : "closed"}
               variants={variants}
             >
