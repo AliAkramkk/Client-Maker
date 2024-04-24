@@ -271,13 +271,7 @@ const Home = () => {
                   <h2 className="mt-0.5 text-lg text-white">Google Ad</h2>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Boost your online visibility with expert SEO services from
-                    TheClientsMaker.com. We specialize in optimizing your
-                    website to rank higher on search engines and attract more
-                    organic traffic. From keyword research to on-page
-                    optimization, we offer a comprehensive approach to improving
-                    your search engine rankings. Let us help your business reach
-                    its full potential online.
+                  At TheClientsMaker.com, we specialize in crafting powerful Google Ads campaigns to propel your business to new heights. With our expertise, we'll help you dominate the search engine results pages (SERPs) and attract more customers to your website..
                   </p>
                 </div>
               </div>
@@ -300,13 +294,7 @@ const Home = () => {
                   <h2 className="mt-0.5 text-lg text-white">Meta Ad</h2>
 
                   <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Boost your online visibility with expert SEO services from
-                    TheClientsMaker.com. We specialize in optimizing your
-                    website to rank higher on search engines and attract more
-                    organic traffic. From keyword research to on-page
-                    optimization, we offer a comprehensive approach to improving
-                    your search engine rankings. Let us help your business reach
-                    its full potential online.
+                  At TheClientsMaker.com, we specialize in creating impactful Meta Ads that drive results. With our expertise, we'll help you reach your target audience across the Meta platform and beyond, maximizing your online visibility and attracting more customers to your business
                   </p>
                 </div>
               </div>
