@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
-import logo from '../assets/ab4.png';
+// import logo from '../assets/ab4.png';
 import Footer from '../Components/Footer/Footer';
 
 const About = () => {
