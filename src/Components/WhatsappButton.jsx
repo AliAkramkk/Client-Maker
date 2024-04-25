@@ -2,6 +2,14 @@ import React from 'react';
 import whatsappIcon from '../assets/wats.webp';
 
 const WhatsappButton = () => {
+
+    const handleClick = () => {
+        const phoneNumber = '+919946921752';
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+        window.open(url, "_blank");
+      };
+    
+
   return (
     <div
       className="fixed bottom-10 right-10 z-50 cursor-pointer transition-all duration-300"
