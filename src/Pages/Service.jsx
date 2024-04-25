@@ -19,7 +19,7 @@ const Service = () => {
             alt="TheClientsMaker Logo"
             className="mb-4 max-w-xs md:mr-6 md:mb-0"
           />
-          <h3 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left">
+          <h3 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left jerking-effect">
             <strong className='text-white'>your digital salesman </strong>
             <span className='text-red-700 font-bold'></span>
             <br />
@@ -28,7 +28,7 @@ const Service = () => {
         </div>
         </div>
 
-      <h1 className="text-4xl font-bold text-gray-900 mb-4 mt-4 text-center">
+      <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-4 text-center jerking-effect">
         Some of our services
       </h1>
       
