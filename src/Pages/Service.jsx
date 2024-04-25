@@ -7,7 +7,7 @@ import ServiceCard3 from '../Components/Service/ServiceCard3'
 import ServiceCard4 from '../Components/Service/ServiceCard4'
 import ServiceCard6 from '../Components/Service/ServiceCard6'
 import ServiceCard5 from '../Components/Service/ServiceCard5'
-
+import './Service1.css'
 const Service = () => {
   return (
     <div className='bg-black'>

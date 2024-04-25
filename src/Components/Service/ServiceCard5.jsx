@@ -33,8 +33,8 @@ const ServiceCard5 = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-          <article className="space-y-4 text-gray-600">
-          <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Customized Web Maker</h2>
+          <article className="space-y-4 text-gray-400">
+          <h2 className="text-3xl text-gray-300 font-bold sm:text-4xl">Customized Web Maker</h2>
             <p>
             We specialize in crafting bespoke websites tailored to your unique business needs. Our team creates user-friendly, visually appealing, and fully functional websites that reflect your brand identity and resonate with your target audience..
             </p>

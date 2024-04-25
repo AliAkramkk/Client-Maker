@@ -34,9 +34,9 @@ const ServiceCard3 = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-          <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Google Ads</h2>
+          <h2 className="text-3xl text-gray-400 font-bold sm:text-4xl">Google Ads</h2>
   
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-300">
           Our content creation services are personalized to align with your brand voice, values, and goals. From compelling blog posts and engaging social media content to informative articles and captivating videos, we develop high-quality, tailored content that enhances your online presence and drives customer engagement.
           </p>
   

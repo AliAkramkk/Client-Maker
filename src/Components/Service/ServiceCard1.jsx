@@ -32,8 +32,8 @@ const ServiceCard1 = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Content Making</h2>
-            <p className="mt-4 text-gray-600">
+            <h2 className="text-3xl text-gray-400 font-bold sm:text-4xl">Content Making</h2>
+            <p className="mt-4 text-gray-300">
             At TheClientsMaker.com, we understand the power of compelling content in capturing the attention of your audience and driving meaningful engagement. Our dedicated team of content creators is here to help you craft content that resonates with your target audience and achieves your business goals.<br/>
             Tailored Content Solutions: We believe in creating content that is customized to meet the unique needs and objectives of your business. Whether you need blog posts, articles, social media content, or more, we've got you covered
             </p>

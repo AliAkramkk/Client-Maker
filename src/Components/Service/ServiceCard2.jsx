@@ -38,8 +38,8 @@ const ServiceCard2 = () => {
             transition={{ duration: 0.5 }}
           >
         {/* <article className="space-y-4 text-gray-600"> */}
-        <h2 className="text-3xl text-gray-600 font-bold sm:text-4xl">Email Marketing</h2>
-          <p className="mt-4 text-gray-600">
+        <h2 className="text-3xl text-gray-400 font-bold sm:text-4xl">Email Marketing</h2>
+          <p className="mt-4 text-gray-300">
           At TheClientsMaker.com, we understand the power of compelling content in capturing the attention of your audience and driving meaningful engagement. Our dedicated team of content creators is here to help you craft content that resonates with your target audience and achieves your business goals.
           </p>
 

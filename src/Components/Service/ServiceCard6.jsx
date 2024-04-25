@@ -34,9 +34,9 @@ const ServiceCard6 = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-          <h2 className="text-3xl text-gray-900 font-bold sm:text-4xl">Content Creation</h2>
+          <h2 className="text-3xl text-gray-400 font-bold sm:text-4xl">Content Creation</h2>
   
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-300">
           Our customized marketing solutions are designed to elevate your brand visibility and drive meaningful results. Whether it's through SEO, social media marketing, email campaigns, or influencer partnerships, we craft personalized strategies to reach your target audience and maximize your ROI.
           </p>
   
