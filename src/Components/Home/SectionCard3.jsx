@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../assets/ali.jpg'
+import img from '../../assets/ali1.png'
 const SectionCard3 = () => {
   return (
     <>
