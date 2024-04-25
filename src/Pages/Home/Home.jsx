@@ -22,7 +22,8 @@ import Quotes from "../Quotes";
 import SectionCard3 from "../../Components/Home/SectionCard3";
 import SectionCard4 from "../../Components/Home/SectionCard4";
 import WhatsappButton from "../../Components/WhatsappButton";
-import Blogs from "../../Components/Blogs";
+import Blogs from "../Blogs";
+
 const Home = () => {
   const settings = {
     dots: true,
