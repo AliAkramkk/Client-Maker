@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 // import logo from '../assets/ab4.png';
 import Footer from '../Components/Footer/Footer';
+import WhatsappButton from '../Components/WhatsappButton';
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
             online presence and drive tangible results.
           </p>
           <p className="mb-4">
-            At <span className='font-bold'>TheClientsMaker.com</span>, we understand
+            At <span className='font-bold'>theclientsmaker.com</span>, we understand
             that in today's dynamic digital world, having a strong online
             presence is paramount. That's why we offer a comprehensive suite of
             services designed to empower businesses to thrive in the digital
@@ -58,6 +59,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <WhatsappButton />
       <Footer />
     </div>
   );

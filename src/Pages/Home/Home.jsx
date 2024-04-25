@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 import Quotes from "../Quotes";
 import SectionCard3 from "../../Components/Home/SectionCard3";
 import SectionCard4 from "../../Components/Home/SectionCard4";
+import WhatsappButton from "../../Components/WhatsappButton";
 const Home = () => {
   const settings = {
     dots: true,
@@ -98,6 +99,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <WhatsappButton />
       <SectionCard2 style={{ paddingTop: "3rem", paddingBottom: "2rem" }}/>
       <h1 className="text-4xl font-bold text-gray-800 mb-4 mt-8 text-center">
         Our Services{" "}

@@ -8,6 +8,7 @@ import ServiceCard4 from '../Components/Service/ServiceCard4'
 import ServiceCard6 from '../Components/Service/ServiceCard6'
 import ServiceCard5 from '../Components/Service/ServiceCard5'
 import './Service1.css'
+import WhatsappButton from '../Components/WhatsappButton'
 const Service = () => {
   return (
     <div className='bg-black'>
@@ -31,7 +32,7 @@ const Service = () => {
       <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-4 text-center jerking-effect">
         Some of our services
       </h1>
-      
+      <WhatsappButton />
       <ServiceCard1 />
       <ServiceCard2 />
       <ServiceCard3 />
