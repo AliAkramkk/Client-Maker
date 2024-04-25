@@ -83,7 +83,7 @@ const Contact = () => {
               </p>
               <h2 className="mt-8 text-xl font-semibold text-gray-800 dark:text-white">Get Started Today</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white font-extrabold'>Client</span> <span className='text-red-800 font-bold'>Maker</span> can help you achieve your goals.
+                Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white font-extrabold'>theclientsmaker</span> <span className='text-red-800 font-bold'>.com</span> can help you achieve your goals.
               </p>
             </div>
           </motion.div>
