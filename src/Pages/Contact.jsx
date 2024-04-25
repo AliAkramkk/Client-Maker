@@ -1,22 +1,24 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import service from '../assets/ser4.jpg'
-const Contact = () => {
-  const navbarStyle = {
-    background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
-  };
+import service from '../assets/ser4.jpg';
+import { motion } from 'framer-motion';
 
+const Contact = () => {
   return (
-    <div className="bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]"
-    style={{ backgroundImage: `url(${service})` }}>
+    <div className="bg-black">
       <Navbar />
       <div className="container my-8 md:my-24 mx-auto md:px-6">
-        <section className="bg-white dark:bg-gray-900 rounded-lg" style={navbarStyle}>
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="bg-gradient-to-t from-gray-900/50 to-gray-900/25 border p-8 shadow-lg hover:shadow-sky-900 rounded-md"
+        >
           <div className="container px-6 py-12 mx-auto">
             <div>
-              <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
-                Welcome to <span className='text-white'>Client</span> <span className='text-red-800'>Maker</span> - Your Digital Salesman
+              <h1 className="mt-2 text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
+                Welcome to <span className='text-white'>theclientmaker</span> <span className='text-red-800'>.com</span> - Your Digital Salesman
               </h1>
               <p className="mt-3 text-gray-500 dark:text-gray-400">
                 Our friendly team is always here to chat.
@@ -26,12 +28,12 @@ const Contact = () => {
               <ContactInfo
                 icon={<EmailIcon />}
                 title="Email"
-                content="hello@clientmakergmail.com"
+                content="hello@clientsmaker.com"
               />
               <ContactInfo
                 icon={<OfficeIcon />}
                 title="Office"
-                content="Calicut Kinfra Kakkancheri"
+                content=""
               />
               <ContactInfo
                 icon={<PhoneIcon />}
@@ -40,41 +42,51 @@ const Contact = () => {
               />
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
       <div className="container my-8 mx-auto px-4">
         <div className="flex flex-wrap justify-center">
-          <div className="w-full md:w-1/2 lg:w-5/12 px-4">
-            <div className="relative rounded-lg bg-white shadow-lg dark:bg-dark-2 sm:p-8"style={navbarStyle}>
+          <motion.div
+            initial={{ x: '-100vw' }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="w-full md:w-1/2 lg:w-5/12 px-4"
+          >
+            <div className="relative bg-gradient-to-t border from-gray-900/50 to-gray-900/25 border-gray-800 p-8 shadow-lg rounded-md transition hover:shadow-sky-400">
               <form>
                 <ContactInputBox type="text" name="name" placeholder="Your Name" />
-                <ContactInputBox type="text" name="email" placeholder="Your Email" />
-                <ContactInputBox type="text" name="phone" placeholder="Your Phone" />
-                <ContactTextArea row="6" placeholder="Your Message" name="details" defaultValue="" />
+                <ContactInputBox type="email" name="email" placeholder="Your Email" />
+                <ContactInputBox type="tel" name="phone" placeholder="Your Phone" />
+                <ContactTextArea row="6" placeholder="Your Message" name="details" />
                 <div className="mt-4">
                   <button type="submit" className="w-full rounded border border-primary bg-primary p-3 text-black transition hover:bg-opacity-90">Send Message</button>
                 </div>
               </form>
             </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-5/12 px-4 mt-8 md:mt-0">
-            <div className="bg-white dark:bg-gray-900 rounded-lg p-6"style={navbarStyle}>
+          </motion.div>
+          <motion.div
+            initial={{ x: '100vw' }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="w-full md:w-1/2 lg:w-5/12 px-4 mt-8 md:mt-0"
+          >
+            <div className="block rounded-xl border bg-gradient-to-t from-gray-900/50 to-gray-900/25 border-gray-800 p-8 shadow-lg  transition hover:shadow-sky-400">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-white">What Sets Us Apart</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white underline text-2xl'>Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
+                <span className='text-white font-semibold'>Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
               </p>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white underline text-2xl'>Innovative Solutions:</span> In the ever-evolving world of digital marketing, staying ahead of the curve is crucial. That's why we're constantly exploring new technologies and innovative techniques to keep your brand at the forefront of your industry.
+                <span className='text-white font-semibold'>Innovative Solutions:</span> In the ever-evolving world of digital marketing, staying ahead of the curve is crucial. That's why we're constantly exploring new technologies and innovative techniques to keep your brand at the forefront of your industry.
               </p>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white underline text-2xl'>Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
+                <span className='text-white font-semibold'>Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
               </p>
               <h2 className="mt-8 text-xl font-semibold text-gray-800 dark:text-white">Get Started Today</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
                 Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white font-extrabold'>Client</span> <span className='text-red-800 font-bold'>Maker</span> can help you achieve your goals.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Footer />
@@ -83,9 +95,6 @@ const Contact = () => {
 };
 
 const ContactInfo = ({ icon, title, content }) => {
-  const navbarStyle = {
-    background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
-  };
   return (
     <div className="flex items-center">
       <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
@@ -99,10 +108,7 @@ const ContactInfo = ({ icon, title, content }) => {
   );
 };
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
-  const navbarStyle = {
-    background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
-  };
+const ContactTextArea = ({ row, placeholder, name }) => {
   return (
     <div className="mt-4">
       <textarea
@@ -110,16 +116,12 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
         placeholder={placeholder}
         name={name}
         className="w-full resize-none rounded border border-stroke px-4 py-2 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-        defaultValue={defaultValue}
       />
     </div>
   );
 };
 
 const ContactInputBox = ({ type, placeholder, name }) => {
-  const navbarStyle = {
-    background: "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
-  };
   return (
     <div className="mt-4">
       <input
