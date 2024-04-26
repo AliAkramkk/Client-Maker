@@ -31,7 +31,7 @@ const SectionCard3 = () => {
                   className="inline-block size-28 rounded-full"
                 />
               </span>
-              <h4 className="mb-0.5 text-xl font-bold text-white" >Irma Norton</h4>
+              <h4 className="mb-0.5 text-xl font-bold text-white" >Akmel Ali</h4>
               <p className="font-medium text-gray-600 dark:text-gray-400">
                 Founder &amp; CEO
               </p>
