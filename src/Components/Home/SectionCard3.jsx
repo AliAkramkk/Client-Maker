@@ -1,6 +1,8 @@
 import React from 'react'
 import img from '../../assets/ali1.png'
+import img2 from '../../assets/seoS1.png'
 import img1 from '../../assets/ikka.jpg'
+
 const SectionCard3 = () => {
   return (
     <>
@@ -65,14 +67,14 @@ const SectionCard3 = () => {
             <div>
               <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
-                  src="https://cdn.tailkit.com/media/placeholders/avatar-sibVwORYqs0-320x320.jpg"
+                  src={img2}
                   alt="User Avatar"
                   className="inline-block size-28 rounded-full"
                 />
               </span>
-              <h4 className="mb-0.5 text-xl font-bold text-white">Alex Saunders</h4>
+              <h4 className="mb-0.5 text-xl font-bold text-white">Bency Niyas vu</h4>
               <p className="font-medium text-gray-600 dark:text-gray-400">
-                Marketing
+              Seo Specialist
               </p>
             </div>
             <div>
