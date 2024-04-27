@@ -1,15 +1,62 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { ToastContainer, toast } from 'react-toastify'; // Import react-toastify
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import service from '../assets/ser4.jpg';
-import { motion } from 'framer-motion';
 import WhatsappButton from '../Components/WhatsappButton';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    details: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+   
+    if (formData.name.trim() === '' || formData.email.trim() === '' || formData.phone.trim() === '' || formData.details.trim() === '') {
+    
+      toast.error('Please fill all fields');
+      return;
+    }
+   
+    const phoneRegex = /^[0-9]{10}$/; 
+    if (!phoneRegex.test(formData.phone.trim())) {
+      
+      toast.error('Please enter a valid phone number');
+      return;
+    }
+    // Send WhatsApp message
+    const whatsappNumber = '971562630333'; 
+    const message = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nDetails: ${formData.details}`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+    
+    toast.success('Our Team will contact you soon');
+   
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      details: ''
+    });
+  };
+
   return (
     <div className="bg-black">
       <Navbar />
+      <ToastContainer />
       <div className="container my-8 md:my-24 mx-auto md:px-6">
         <motion.section
           initial={{ opacity: 0 }}
@@ -30,7 +77,7 @@ const Contact = () => {
               <ContactInfo
                 icon={<EmailIcon />}
                 title="Email"
-                content="hi@theclientsmaker.com"
+                content="hello@clientsmaker.com"
               />
               <ContactInfo
                 icon={<OfficeIcon />}
@@ -55,15 +102,13 @@ const Contact = () => {
             className="w-full md:w-1/2 lg:w-5/12 px-4"
           >
             <div className="relative bg-gradient-to-t border from-gray-900/50 to-gray-900/25 border-gray-800 p-8 shadow-lg rounded-md transition hover:shadow-sky-400">
-              <form>
-                <ContactInputBox type="text" name="name" placeholder="Your Name" />
-                <ContactInputBox type="email" name="email" placeholder="Your Email" />
-                <ContactInputBox type="tel" name="phone" placeholder="Your Phone" />
-                <ContactTextArea row="6" placeholder="Your Message" name="details" />
+              <form onSubmit={handleSubmit}>
+                <ContactInputBox type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} />
+                <ContactInputBox type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} />
+                <ContactInputBox type="tel" name="phone" placeholder="Your Phone" value={formData.phone} onChange={handleChange} />
+                <ContactTextArea row="6" placeholder="Your Message" name="details" value={formData.details} onChange={handleChange} />
                 <div className="mt-4">
-                  <Link to='#'>
                   <button type="submit" className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90">Send Message</button>
-                  </Link>
                 </div>
               </form>
             </div>
@@ -100,8 +145,6 @@ const Contact = () => {
 
 const ContactInfo = ({ icon, title, content }) => {
   return (
-    <>
-    <WhatsappButton />
     <div className="flex items-center">
       <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
         {icon}
@@ -111,30 +154,33 @@ const ContactInfo = ({ icon, title, content }) => {
         <p className="mt-2 text-gray-500 dark:text-gray-400">{content}</p>
       </div>
     </div>
-    </>
   );
 };
 
-const ContactTextArea = ({ row, placeholder, name }) => {
+const ContactTextArea = ({ row, placeholder, name, value, onChange }) => {
   return (
     <div className="mt-4">
       <textarea
         rows={row}
         placeholder={placeholder}
         name={name}
+        value={value}
+        onChange={onChange}
         className="w-full resize-none rounded border border-stroke px-4 py-2 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
       />
     </div>
   );
 };
 
-const ContactInputBox = ({ type, placeholder, name }) => {
+const ContactInputBox = ({ type, placeholder, name, value, onChange }) => {
   return (
     <div className="mt-4">
       <input
         type={type}
         placeholder={placeholder}
         name={name}
+        value={value}
+        onChange={onChange}
         className="w-full rounded border border-stroke px-4 py-2 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
       />
     </div>
