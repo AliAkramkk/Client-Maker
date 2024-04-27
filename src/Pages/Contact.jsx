@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ToastContainer, toast } from 'react-toastify'; // Import react-toastify
+import { ToastContainer, toast } from 'react-toastify'; 
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import WhatsappButton from '../Components/WhatsappButton';
@@ -145,6 +145,8 @@ const Contact = () => {
 
 const ContactInfo = ({ icon, title, content }) => {
   return (
+    <>
+    <WhatsappButton />
     <div className="flex items-center">
       <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
         {icon}
@@ -154,6 +156,7 @@ const ContactInfo = ({ icon, title, content }) => {
         <p className="mt-2 text-gray-500 dark:text-gray-400">{content}</p>
       </div>
     </div>
+    </>
   );
 };
 
