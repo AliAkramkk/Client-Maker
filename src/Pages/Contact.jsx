@@ -34,7 +34,7 @@ const Contact = () => {
               <ContactInfo
                 icon={<OfficeIcon />}
                 title="Office"
-                content=""
+                content="301 city centre oud metha dubai"
               />
               <ContactInfo
                 icon={<PhoneIcon />}
