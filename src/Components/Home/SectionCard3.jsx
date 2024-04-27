@@ -74,7 +74,7 @@ const SectionCard3 = () => {
               </span>
               <h4 className="mb-0.5 text-xl font-bold text-white">Bency Niyas vu</h4>
               <p className="font-medium text-gray-600 dark:text-gray-400">
-              Seo Specialist
+              SEO Specialist
               </p>
             </div>
             <div>
