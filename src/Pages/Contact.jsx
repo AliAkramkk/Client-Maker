@@ -39,7 +39,7 @@ const Contact = () => {
               <ContactInfo
                 icon={<PhoneIcon />}
                 title="Phone"
-                content="+91 999449944"
+                content="0523584369"
               />
             </div>
           </div>
