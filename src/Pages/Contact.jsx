@@ -30,7 +30,7 @@ const Contact = () => {
               <ContactInfo
                 icon={<EmailIcon />}
                 title="Email"
-                content="hello@clientsmaker.com"
+                content="hi@theclientsmaker.com"
               />
               <ContactInfo
                 icon={<OfficeIcon />}
