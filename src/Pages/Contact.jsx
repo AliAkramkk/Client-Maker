@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import service from '../assets/ser4.jpg';
@@ -60,7 +61,9 @@ const Contact = () => {
                 <ContactInputBox type="tel" name="phone" placeholder="Your Phone" />
                 <ContactTextArea row="6" placeholder="Your Message" name="details" />
                 <div className="mt-4">
-                  <button type="submit" className="w-full rounded border border-primary bg-primary p-3 text-black transition hover:bg-opacity-90">Send Message</button>
+                  <Link to='#'>
+                  <button type="submit" className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90">Send Message</button>
+                  </Link>
                 </div>
               </form>
             </div>
@@ -72,7 +75,7 @@ const Contact = () => {
             className="w-full md:w-1/2 lg:w-5/12 px-4 mt-8 md:mt-0"
           >
             <div className="block rounded-xl border bg-gradient-to-t from-gray-900/50 to-gray-900/25 border-gray-800 p-8 shadow-lg  transition hover:shadow-sky-400">
-              <h2 className="text-xl font-semibold text-gray-800 dark:text-white">What Sets Us Apart</h2>
+              <h2 className="text-xl font-semibold text-gray-500 dark:text-white">What Sets Us Apart</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
                 <span className='text-white font-semibold'>Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
               </p>
@@ -82,7 +85,7 @@ const Contact = () => {
               <p className="mt-4 text-gray-500 dark:text-gray-400">
                 <span className='text-white font-semibold'>Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
               </p>
-              <h2 className="mt-8 text-xl font-semibold text-gray-800 dark:text-white">Get Started Today</h2>
+              <h2 className="mt-8 text-xl font-semibold text-gray-500 dark:text-white">Get Started Today</h2>
               <p className="mt-4 text-gray-500 dark:text-gray-400">
                 Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white font-extrabold'>theclientsmaker</span> <span className='text-red-800 font-bold'>.com</span> can help you achieve your goals.
               </p>
