@@ -1,11 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Layout = () => {
+const Layout = ({ handleFormSubmit }) => { 
   return (
-    <main className="App">
-      <Outlet />
-    </main>
+    <div className="bg-black">
+      <Navbar />
+      <main className="App">
+     
+        <Outlet  />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
