@@ -26,16 +26,16 @@ const Navbar = () => {
             </h3>
           </a>
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-            <li className="font-montserrat leading-normal font-bold text-lg text-white">
+            <li className="font-montserrat leading-normal  hover:scale-110   transition-all ease-in-out text-lg text-white">
               <Link to="/">Home</Link>
             </li>
-            <li className="font-montserrat leading-normal text-lg text-white">
+            <li className="font-montserrat leading-normal text-lg text-white  hover:scale-110   transition-all ease-in-out">
               <Link to="/about">About</Link>
             </li>
-            <li className="font-montserrat leading-normal text-lg text-white">
+            <li className="font-montserrat leading-normal text-lg text-white  hover:scale-110   transition-all ease-in-out">
               <Link to="/service">Services</Link>
             </li>
-            <li className="font-montserrat leading-normal text-lg text-white">
+            <li className="font-montserrat leading-normal text-lg text-white  hover:scale-110   transition-all ease-in-out">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -72,10 +72,10 @@ const Navbar = () => {
                 <Link to="/about">About</Link>
               </li>
               <li className="font-montserrat leading-normal text-lg p-2">
-                <Link to="/contact">Contact</Link>
+                <Link to="/service">Services</Link>
               </li>
               <li className="font-montserrat leading-normal text-lg p-2">
-                <Link to="/service">Services</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </motion.ul>
           </div>
