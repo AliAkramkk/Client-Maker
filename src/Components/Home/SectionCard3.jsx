@@ -38,7 +38,7 @@ const SectionCard3 = () => {
                 Founder &amp; CEO
               </p>
             </div>
-            <div>
+            {/* <div>
               <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
                   src="https://cdn.tailkit.com/media/placeholders/avatar-iFgRcqHznqg-320x320.jpg"
@@ -50,7 +50,7 @@ const SectionCard3 = () => {
               <p className="font-medium text-gray-600 dark:text-gray-400">
                 Product Design
               </p>
-            </div>
+            </div> */}
             <div>
               <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
@@ -77,7 +77,7 @@ const SectionCard3 = () => {
               SEO Specialist
               </p>
             </div>
-            <div>
+            {/* <div>
               <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
                   src="https://cdn.tailkit.com/media/placeholders/avatar-euZ2n8dGUcQ-320x320.jpg"
@@ -89,8 +89,8 @@ const SectionCard3 = () => {
               <p className="font-medium text-gray-600 dark:text-gray-400">
                 Support Specialist
               </p>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
                   src="https://cdn.tailkit.com/media/placeholders/avatar-DLKR_x3T_7s-320x320.jpg"
@@ -102,7 +102,7 @@ const SectionCard3 = () => {
               <p className="font-medium text-gray-600 dark:text-gray-400">
                 Web Developer
               </p>
-            </div>
+            </div> */}
           </div>
           {/* END Team */}
         </div>
