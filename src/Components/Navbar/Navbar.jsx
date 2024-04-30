@@ -21,7 +21,8 @@ const Navbar = () => {
         <nav className="flex justify-between items-center max-container">
           <a href="/" className="flex items-center">
             <h3 className="ml-10 block font-extrabold text-white mt-6 text-xl font-serif">
-              theclientsmaker<span className="text-rose-700">.com</span><br />
+            <h1 style={{ fontFamily: 'Cinzel, serif' }}>
+            theclientsmaker</h1><span className='text-red-700'>.com</span>
               <p className="text-white text-xs italic mt-1"> <em> Your digital salesman</em></p>
             </h3>
           </a>
