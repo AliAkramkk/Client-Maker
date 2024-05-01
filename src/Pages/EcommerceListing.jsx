@@ -40,7 +40,7 @@ const EcommerceListing = () => {
               ))}
             </Slider>
             {/* Embed the VideoPlayer component with videoUrl */}
-            <VideoPlayer videoUrl={videoUrl} />
+            {/* <VideoPlayer videoUrl={videoUrl} /> */}
           </div>
           <div className="lg:w-1/2 lg:pl-8">
             <h1 className="text-3xl font-medium mb-4">Content Making</h1>
