@@ -9,6 +9,7 @@ const SectionCard2 = () => {
     threshold: 0.50 
   });
 
+  console.log("Is in view:", inView);
   return (
     <section ref={ref}>
       <div className="mx-auto max-w-screen-2xl py-8 sm:px-6 lg:px-8">
