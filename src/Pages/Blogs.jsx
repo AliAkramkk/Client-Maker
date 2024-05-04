@@ -50,11 +50,11 @@ const Blogs = () => {
             <div>
               <div className="p-4">
                 <Link to="/">
-                  <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-sky-400">
+                  <article className="relative overflow-hidden rounded-lg ">
                     <img
                       alt=""
                       src={ser}
-                      className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105"
+                      className="absolute inset-0 h-full w-full object-cover "
                     />
                     <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
                       <div className="p-4 sm:p-6">
@@ -71,7 +71,7 @@ const Blogs = () => {
             <div>
               <div className="p-4">
                 <Link to="/">
-                  <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-sky-400">
+                  <article className="relative overflow-hidden rounded-lg ">
                     <img
                       alt=""
                       src={ser1}
@@ -92,7 +92,7 @@ const Blogs = () => {
             <div>
               <div className="p-4">
                 <Link to="/">
-                  <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-sky-400">
+                  <article className="relative overflow-hidden rounded-lg ">
                     <img
                       alt=""
                       src={ser2}
@@ -114,11 +114,11 @@ const Blogs = () => {
             <div>
               <div className="p-4">
                 <Link to="/">
-                  <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg hover:shadow-sky-400">
+                  <article className="relative overflow-hidden rounded-lg ">
                     <img
                       alt=""
                       src={ser3}
-                      className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105"
+                      className="absolute inset-0 h-full w-full object-cover "
                     />
                     <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
                       <div className="p-4 sm:p-6">
