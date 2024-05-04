@@ -7,7 +7,7 @@ const ServiceCard5 = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true, 
-    threshold: 0.7 
+    threshold: 0.5 
   });
 
 
