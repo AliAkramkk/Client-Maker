@@ -23,7 +23,7 @@ const Navbar = () => {
             <h3 className="ml-10 block font-extrabold text-white mt-6 text-xl font-serif">
             <h1 style={{ fontFamily: 'Cinzel, serif' }}>
             theclientsmaker <span className='text-red-700'>.com</span></h1>
-              <p className="text-white text-xs italic mt-1"> <em> Your digital salesman</em></p>
+            <p className="text-white text-xl italic mt-1" style={{ fontFamily: 'Dancing Script, cursive' }}> <em> Your digital salesman</em></p>
             </h3>
           </a>
           <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
