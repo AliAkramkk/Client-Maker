@@ -67,7 +67,7 @@ const Contact = () => {
           <div className="container px-6 py-12 mx-auto">
             <div>
               <h1 className="mt-2 text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
-                Welcome to <span className='text-white'>theclientmaker</span> <span className='text-red-800'>.com</span> - Your Digital Salesman
+                Welcome to <span className='text-white'>theclientsmaker</span> <span className='text-red-800'>.com</span> - Your Digital Salesman
               </h1>
               <p className="mt-3 text-gray-500 dark:text-gray-400">
                 Our friendly team is always here to chat.
