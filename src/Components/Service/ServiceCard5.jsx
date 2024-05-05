@@ -34,9 +34,10 @@ const ServiceCard5 = () => {
             transition={{ duration: 0.5 }}
           >
           <article className="space-y-4 text-gray-400">
-          <h2 className="text-3xl text-gray-300 font-bold sm:text-4xl">Customized Web Maker</h2>
+          <h2 className="text-3xl text-gray-300 font-bold sm:text-4xl">SEO</h2>
             <p>
-            We specialize in crafting bespoke websites tailored to your unique business needs. Our team creates user-friendly, visually appealing, and fully functional websites that reflect your brand identity and resonate with your target audience..
+            At TheClientsMaker.com, we understand the vital role that SEO (Search Engine Optimization) plays in boosting your online visibility and driving organic traffic to your website. Our dedicated team of SEO experts is here to help you optimize your website and climb the search engine rankings.<br/>
+Tailored SEO Solutions: We believe in a customized approach to SEO that is tailored to the unique needs and goals of your business. Whether you're looking to increase website traffic, improve your search engine rankings, or generate more leads, we've got you covered
             </p>
   
             <p>
