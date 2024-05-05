@@ -17,7 +17,9 @@ const Service = () => {
     'Content Making',
     'Google Ads',
     'Web Application',
-    'Instagram Marketing'
+    'SEO',
+    'Meta Ads',
+    'E Commerce Listing'
   ];
 
   useEffect(() => {
@@ -34,11 +36,11 @@ const Service = () => {
       <Navbar />
       <div className="flex flex-col items-center justify-start mt-16">
         <div className="p-6 text-white flex flex-col items-center md:flex-row justify-center md:justify-start">
-          <img
+          {/* <img
             src={logo}
             alt="TheClientsMaker Logo"
             className="mb-4 max-w-xs md:mr-6 md:mb-0"
-          />
+          /> */}
           <h3 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left jerking-effect">
             <strong className='text-white'>Our services are : </strong><br/>
             <span className="text-red-700 font-bold">
