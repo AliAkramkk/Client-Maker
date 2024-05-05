@@ -338,10 +338,10 @@ const Home = () => {
 <SectionCard4/>
       
       <Quotes />
-      <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-8 text-center">
+      {/* <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-8 text-center">
         Blogs{" "}
-      </h1>
-      <Blogs />
+      </h1> */}
+      {/* <Blogs /> */}
       <Footer />
     </div>
   );
