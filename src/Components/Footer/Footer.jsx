@@ -1,78 +1,90 @@
-import React from "react";
-// import { Link } from "react-router-dom";
-import logo from "../../assets/navbar.png";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Footer = () => {
-  // const [isVisible, setIsVisible] = useState(false);
-  // useEffect(() => {
-    // Function to check if user has scrolled down 20px from the top
-    // function handleScroll() {
-    //   if (window.scrollY > 20) {
-    //     setIsVisible(true);
-    //   } else {
-    //     setIsVisible(false);
-    //   }
-    // }
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-    // Event listener for scrolling
-    // window.addEventListener("scroll", handleScroll);
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
-    // Cleanup
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []); // Run only on mount and unmount
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  // Function to smoothly scroll to top
-  // function scrollToTop() {
-  //   const scrollStep = -window.scrollY / (1000 / 15);
-  //   const scrollInterval = setInterval(() => {
-  //     if (window.scrollY !== 0) {
-  //       window.scrollBy(0, scrollStep);
-  //     } else {
-  //       clearInterval(scrollInterval);
-  //     }
-  //   }, 15);
-  // }
+    if (email.trim() === '') {
+      setMessage('Please enter your email address.');
+      return;
+    }
+
+    emailjs.send(
+      'service_mno3tno',
+      'template_q0viicx',
+      { email },
+      '7D5QQ1Nxj2wwKLmW0'
+    )
+    .then((response) => {
+      toast.success('Thanks! Our Team will contact you soon.');
+      setEmail('');
+    })
+    .catch((error) => {
+      toast.error('There was an error subscribing. Please try again.');
+    });
+  };
 
   return (
-   
-        <footer className="bg-black  shadow dark:bg-gray-900 " >
-      <div className="w-full max-w-screen-xl mx-auto p-4 my-auto md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="#"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
-            {/* <img
-              src={logo}
-              className="h-64 w-64"
-              alt="Your Logo"
-              style={{ cursor: "pointer" }}
-            /> */}
-          </a>
-          {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li>
-              <Link to="/about" className="hover:underline me-4 md:me-6">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/privacypolicy"
-                className="hover:underline me-4 md:me-6"
+    <footer className="bg-white py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-lg font-semibold">About Us</h3>
+            <p className="mt-4 text-gray-600 font-medium">
+              At <span className="font-bold">The Clients Maker</span>, we specialize in transforming your digital presence. Our innovative marketing strategies and cutting-edge solutions ensure your business stays ahead of the competition. Let's create success together!
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Email Us</h3>
+            <p className="mt-4 text-gray-600 font-medium">Make Your Buisness To Next Level</p>
+            <form onSubmit={sendEmail} className="mt-4 flex">
+              <input
+                type="email"
+                value={email}
+                onChange={handleEmailChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="Email Address"
+              />
+              <button
+                type="submit"
+                className="px-4 py-2 bg-yellow-500 text-white rounded-r-lg"
               >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Licensing
+                →
+              </button>
+            </form>
+            {message && <p className="mt-2 text-gray-600">{message}</p>}
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold">Follow Us</h3>
+            <p className="mt-4 text-gray-600 font-medium">Let's connect on social media</p>
+            <div className="mt-4 flex space-x-4">
+              <a href="https://www.facebook.com/yourpage" className="text-gray-600 hover:text-gray-800">
+                <FontAwesomeIcon icon={faFacebookF} />
               </a>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:underline me-4 md:me-6">
-                contact
-              </Link>
-            </li>
-          </ul> */}
+              <a href="https://www.twitter.com/yourpage" className="text-gray-600 hover:text-gray-800">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="https://www.instagram.com/yourpage" className="text-gray-600 hover:text-gray-800">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="border-t-2 border-gray-300 mt-8 pt-8">
+          <div className="text-center text-gray-500">
+            <p>2024 The Clients Maker, LLC. All rights reserved</p>
+          </div>
         </div>
       </div>
     </footer>

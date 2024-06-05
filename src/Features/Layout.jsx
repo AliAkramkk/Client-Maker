@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Layout = ({ handleFormSubmit }) => { 
   return (
-    <div className="bg-black">
+    <div className="">
       <Navbar />
       <main className="App">
      

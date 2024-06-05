@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify'; 
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import WhatsappButton from '../Components/WhatsappButton';
@@ -24,27 +25,20 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   
     if (formData.name.trim() === '' || formData.email.trim() === '' || formData.phone.trim() === '' || formData.details.trim() === '') {
-    
       toast.error('Please fill all fields');
       return;
     }
-   
     const phoneRegex = /^[0-9]{10}$/; 
     if (!phoneRegex.test(formData.phone.trim())) {
-      
       toast.error('Please enter a valid phone number');
       return;
     }
-    // Send WhatsApp message
     const whatsappNumber = '971562630333'; 
     const message = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nDetails: ${formData.details}`;
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
-    
     toast.success('Our Team will contact you soon');
-   
     setFormData({
       name: '',
       email: '',
@@ -54,61 +48,55 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-gray-100">
       <Navbar />
       <ToastContainer />
-      <div className="container my-8 md:my-24 mx-auto md:px-6">
+      <div className="container my-16 mx-auto px-6">
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="bg-gradient-to-t from-gray-900/50 to-gray-900/25 border p-8 shadow-lg hover:shadow-sky-900 rounded-md"
+          className="bg-black p-8 shadow-lg rounded-lg text-white"
         >
-          <div className="container px-6 py-12 mx-auto">
-            <div>
-              <h1 className="mt-2 text-3xl font-semibold text-gray-800 md:text-4xl dark:text-white">
-                Welcome to <span className='text-white'>theclientsmaker</span> <span className='text-red-800'>.com</span> - Your Digital Salesman
-              </h1>
-              <p className="mt-3 text-gray-500 dark:text-gray-400">
-                Our friendly team is always here to chat.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2">
-              <ContactInfo
-                icon={<EmailIcon />}
-                title="Email"
-                content="hi@theclientsmaker.com"
-              />
-              <ContactInfo
-                icon={<OfficeIcon />}
-                title="Office"
-                content="301 city centre oud metha dubai"
-              />
-              <ContactInfo
-                icon={<PhoneIcon />}
-                title="Phone"
-                content="0523584369"
-              />
-            </div>
+          <div className="text-center">
+            <h1 className="text-4xl font-bold">Welcome to <span className="text-yellow-300">theclientsmaker</span><span className="text-red-600">.com</span></h1>
+            <p className="mt-2 text-lg">Your Digital Salesman - Our friendly team is always here to chat.</p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2">
+            <ContactInfo
+              icon={<EmailIcon />}
+              title="Email"
+              content="hi@theclientsmaker.com"
+            />
+            <ContactInfo
+              icon={<OfficeIcon />}
+              title="Office"
+              content="301 City Centre, Oud Metha, Dubai"
+            />
+            <ContactInfo
+              icon={<PhoneIcon />}
+              title="Phone"
+              content="0523584369"
+            />
           </div>
         </motion.section>
       </div>
-      <div className="container my-8 mx-auto px-4">
+      <div className="container my-16 mx-auto px-6">
         <div className="flex flex-wrap justify-center">
           <motion.div
             initial={{ x: '-100vw' }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full md:w-1/2 lg:w-5/12 px-4"
+            className="w-full md:w-1/2 lg:w-5/12 p-4"
           >
-            <div className="relative bg-gradient-to-t border from-gray-900/50 to-gray-900/25 border-gray-800 p-8 shadow-lg rounded-md transition hover:shadow-sky-400">
+            <div className="bg-white p-8 shadow-lg rounded-lg">
               <form onSubmit={handleSubmit}>
                 <ContactInputBox type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} />
                 <ContactInputBox type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} />
                 <ContactInputBox type="tel" name="phone" placeholder="Your Phone" value={formData.phone} onChange={handleChange} />
                 <ContactTextArea row="6" placeholder="Your Message" name="details" value={formData.details} onChange={handleChange} />
                 <div className="mt-4">
-                  <button type="submit" className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90">Send Message</button>
+                  <button type="submit" className="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">Send Message</button>
                 </div>
               </form>
             </div>
@@ -117,28 +105,28 @@ const Contact = () => {
             initial={{ x: '100vw' }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full md:w-1/2 lg:w-5/12 px-4 mt-8 md:mt-0"
+            className="w-full md:w-1/2 lg:w-5/12 p-4 mt-8 md:mt-0"
           >
-            <div className="block rounded-xl border bg-gradient-to-t from-gray-900/50 to-gray-900/25 border-gray-800 p-8 shadow-lg  transition hover:shadow-sky-400">
-              <h2 className="text-xl font-semibold text-gray-500 dark:text-white">What Sets Us Apart</h2>
-              <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white font-semibold'>Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
+            <div className="bg-white p-8 shadow-lg rounded-lg">
+              <h2 className="text-xl font-semibold">What Sets Us Apart</h2>
+              <p className="mt-4">
+                <span className="font-bold text-purple-600">Strategic Approach:</span> We don't believe in one-size-fits-all solutions. Our team of experienced digital marketing professionals takes a strategic approach, analyzing your business, industry, and target audience to develop customized strategies that deliver results.
               </p>
-              <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white font-semibold'>Innovative Solutions:</span> In the ever-evolving world of digital marketing, staying ahead of the curve is crucial. That's why we're constantly exploring new technologies and innovative techniques to keep your brand at the forefront of your industry.
+              <p className="mt-4">
+                <span className="font-bold text-purple-600">Innovative Solutions:</span> In the ever-evolving world of digital marketing, staying ahead of the curve is crucial. That's why we're constantly exploring new technologies and innovative techniques to keep your brand at the forefront of your industry.
               </p>
-              <p className="mt-4 text-gray-500 dark:text-gray-400">
-                <span className='text-white font-semibold'>Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
+              <p className="mt-4">
+                <span className="font-bold text-purple-600">Transparency and Communication:</span> We believe in transparency and open communication every step of the way. You'll have full visibility into our process, with regular updates and reports to track the progress of your campaigns.
               </p>
-              <h2 className="mt-8 text-xl font-semibold text-gray-500 dark:text-white">Get Started Today</h2>
-              <p className="mt-4 text-gray-500 dark:text-gray-400">
-                Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className='text-white font-extrabold'>theclientsmaker</span> <span className='text-red-800 font-bold'>.com</span> can help you achieve your goals.
+              <h2 className="mt-8 text-xl font-semibold">Get Started Today</h2>
+              <p className="mt-4">
+                Ready to take your digital marketing to the next level? Contact us today to schedule a consultation and discover how <span className="font-bold text-purple-600">theclientsmaker</span><span className="text-red-600 font-bold">.com</span> can help you achieve your goals.
               </p>
             </div>
           </motion.div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
@@ -147,13 +135,13 @@ const ContactInfo = ({ icon, title, content }) => {
   return (
     <>
     <WhatsappButton />
-    <div className="flex items-center">
-      <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+    <div className="flex items-center mb-4">
+      <span className="inline-block p-3 bg-purple-100 rounded-full text-purple-600">
         {icon}
       </span>
       <div className="ml-4">
-        <h2 className="text-lg font-medium text-gray-800 dark:text-white">{title}</h2>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">{content}</p>
+        <h2 className="text-lg font-medium">{title}</h2>
+        <p className="mt-1">{content}</p>
       </div>
     </div>
     </>
@@ -169,7 +157,7 @@ const ContactTextArea = ({ row, placeholder, name, value, onChange }) => {
         name={name}
         value={value}
         onChange={onChange}
-        className="w-full resize-none rounded border border-stroke px-4 py-2 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        className="w-full resize-none rounded-lg border border-gray-300 p-3 text-base outline-none focus:border-purple-600"
       />
     </div>
   );
@@ -184,7 +172,7 @@ const ContactInputBox = ({ type, placeholder, name, value, onChange }) => {
         name={name}
         value={value}
         onChange={onChange}
-        className="w-full rounded border border-stroke px-4 py-2 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        className="w-full rounded-lg border border-gray-300 p-3 text-base outline-none focus:border-purple-600"
       />
     </div>
   );

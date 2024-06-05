@@ -1,37 +1,32 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import Navbar from '../Components/Navbar/Navbar';
-import logo from '../assets/about1.webp';
-import Footer from '../Components/Footer/Footer';
+import aboutImage from '../assets/homecard1.jpg';
+
+
 import WhatsappButton from '../Components/WhatsappButton';
 import { Link } from 'react-router-dom';
+import CallToAction from '../Components/Home/CallToAction';
+import HeroSection from '../Components/HeroSection';
 
 const About = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-white min-h-screen">
       <Navbar />
-      <section
-        className="banner-area relative bg-cover bg-center pt-20"
-        style={{ backgroundImage: `url(${logo})` }}
-        id="home"
-      >
-        <div className="overlay overlay-bg"></div>
-        <div className="container">
-          <div className="flex flex-col items-center justify-center h-full">
-            <div className="about-content text-center pt-5">
-              <h1 className="text-white text-4xl font-bold mb-4">About Us</h1>
-              <p className="text-white link-nav flex justify-center">
-                <Link to="/about" className="text-white mr-2">About Us</Link>
-                <FaArrowRight className="text-white" />
-                <Link to="/" className="text-white ml-2">Home</Link>
-              </p>
-            </div>
+      <div className="relative">
+          <img
+            src={aboutImage}
+            alt="About Us"
+            className="w-full h-96 object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
+            <h1 className="text-white text-4xl font-bold">About Us</h1>
           </div>
         </div>
-      </section>
 
+<HeroSection />
       <div className="flex flex-col items-center justify-start mt-16">
-        <div className="p-6 text-white max-w-screen-lg">
+        <div className="p-6 text-black max-w-screen-lg">
           <p className="text-lg md:text-xl lg:text-2xl mb-4 font-bold">Our Mission</p>
           <p className="mb-4">
             <span className="text-red-800">theclientsmaker.com</span> is a leading digital marketing and business development agency nestled in the vibrant landscape of Dubai. We specialize in crafting compelling digital experiences tailored to elevate your brand's online presence and drive tangible results.
@@ -55,7 +50,8 @@ const About = () => {
       </div>
 
       <WhatsappButton />
-      <Footer />
+      <CallToAction />
+     
     </div>
   );
 };

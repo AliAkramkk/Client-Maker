@@ -13,7 +13,6 @@ import ser4 from "../../assets/seo4.jpeg";
 import ser5 from "../../assets/googled2.png";
 import ser6 from "../../assets/Meta1.png";
 import ser7 from "../../assets/ecommerce3.png";
-import Footer from "../../Components/Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,8 +21,8 @@ import Quotes from "../Quotes";
 import SectionCard3 from "../../Components/Home/SectionCard3";
 import SectionCard4 from "../../Components/Home/SectionCard4";
 import WhatsappButton from "../../Components/WhatsappButton";
-import Blogs from "../Blogs";
-import CallToAction from "../../Components/Home/CallToAction";
+
+
 
 const Home = () => {
   const settings = {
@@ -72,7 +71,7 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
           padding: "0 5px",
           maxWidth: "100vw", 
-          animation: "zoomEffect 6s ease-in-out infinite",
+          // animation: "zoomEffect 6s ease-in-out infinite",
         }}
       >
         <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
@@ -343,8 +342,8 @@ const Home = () => {
       {/* <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-8 text-center">
         Blogs{" "}
       </h1> */}
-      <CallToAction />
-      <Footer />
+     
+      
     </div>
   );
 };

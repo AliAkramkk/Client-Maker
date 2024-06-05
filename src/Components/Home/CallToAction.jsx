@@ -7,7 +7,7 @@ const CallToAction = () => {
     return (
         <>
           
-            <section className="callto-action-area lg:ml-32 lg:mr-32">
+            <section className="callto-action-area lg:ml-32 lg:mr-32 m-10">
                 <div className="container mx-auto">
                     <div className="flex justify-center text-center">
                         <div className="relative w-full bg-cover bg-no-repeat bg-center rounded-lg " style={{ backgroundImage: `url(${image})` }}>

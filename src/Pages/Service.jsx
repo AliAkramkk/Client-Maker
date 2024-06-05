@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../Components/Navbar/Navbar'
-import logo from '../assets/new3.jpg'
+import aboutImage from '../assets/abt.avif'
 import ServiceCard1 from '../Components/Service/ServiceCard1'
 import ServiceCard2 from '../Components/Service/ServiceCard2'
 import ServiceCard3 from '../Components/Service/ServiceCard3'
@@ -9,6 +9,7 @@ import ServiceCard6 from '../Components/Service/ServiceCard6'
 import ServiceCard5 from '../Components/Service/ServiceCard5'
 import './Service1.css'
 import WhatsappButton from '../Components/WhatsappButton'
+import ServiceSection from '../Components/ServiceSection';
 const Service = () => {
 
   const [currentServiceIndex, setCurrentServiceIndex] = useState(0);
@@ -34,28 +35,20 @@ const Service = () => {
   return (
     <div className='bg-black'>
       <Navbar />
-      <div className="flex flex-col items-center justify-start mt-16">
-        <div className="p-6 text-white flex flex-col items-center md:flex-row justify-center md:justify-start">
+      <div className="relative">
           <img
-            src={logo}
-            alt="TheClientsMaker Logo"
-            className="mb-4 max-w-xs md:mr-6 md:mb-0"
+            src={aboutImage}
+            alt="About Us"
+            className="w-full h-96 object-cover"
           />
-          <h3 className="text-xl md:text-2xl lg:text-4xl text-center md:text-left jerking-effect">
-            <strong className='text-white'>Our services are : </strong><br/>
-            <span className="text-red-700 font-bold">
-              {services[currentServiceIndex]}
-            </span>
-           
-            
-          </h3>
-        </div>
+          <div className="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
+            <h1 className="text-white text-4xl font-bold">Services</h1>
+          </div>
         </div>
 
-      <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-4 text-center jerking-effect">
-        Some of our services
-      </h1>
+      
       <WhatsappButton />
+      <ServiceSection />
       <ServiceCard1 />
       <ServiceCard2 />
       <ServiceCard3 />
