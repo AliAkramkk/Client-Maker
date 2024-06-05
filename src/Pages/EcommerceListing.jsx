@@ -43,30 +43,31 @@ const EcommerceListing = () => {
             {/* <VideoPlayer videoUrl={videoUrl} /> */}
           </div>
           <div className="lg:w-1/2 lg:pl-8">
-            <h1 className="text-3xl font-medium mb-4">Content Making</h1>
-            <p className="text-lg leading-relaxed">
-              At TheClientsMaker.com, we understand the power of compelling content in capturing the attention of your audience and driving meaningful engagement. Our dedicated team of content creators is here to help you craft content that resonates with your target audience and achieves your business goals.
-            </p>
-            {/* Add your content here */}
-            <h3 className='text-xl font-bold leading-relaxed'>
-            Why Choose Us for Content Creation?
-            </h3>
-            <p className="text-lg leading-relaxed">
-            Tailored Content Solutions: We believe in creating content that is customized to meet the unique needs and objectives of your business. Whether you need blog posts, articles, social media content, or more, we've got you covered.<br />
-            Quality and Originality: Our team is committed to delivering high-quality, original content that sets your brand apart. We take the time to research your industry, understand your audience, and create content that stands out <br />
-            Engagement and Conversion: Our content isn't just about words; it's about driving engagement and conversion. We focus on creating content that captures attention, builds trust, and ultimately drives action from your audience.<br/>
-            SEO Optimization: We understand the importance of SEO in content marketing. Our content is optimized for search engines to help improve your website's visibility and attract organic traffic.<br/>
-            Creative Approach: Creativity is at the heart of what we do. Whether it's storytelling, visual content, or interactive experiences, we're always looking for innovative ways to showcase your brand and connect with your audience.
-
-            </p>
-            <h3 className='text-xl font-bold leading-relaxed'>
-            Let's Get Started!
-            </h3>
-            <p className="text-lg leading-relaxed">
-            Ready to take your content to the next level? Contact us today to discuss your content creation needs. Whether you're looking to attract new customers, engage your audience, or drive conversions, we're here to help you succeed with content that makes an impact.<br/>
-            <br/>
-            At <span className='font-extrabold'>TheClientsMaker.com</span>, we're not just creating content; we're creating connections.
-            </p>
+          <h1 className="text-3xl font-medium mb-4 ">E-commerce Listing Services</h1>
+                            <p className="text-lg leading-relaxed ">
+                                At TheClientsMaker.com, we understand the importance of accurate and compelling product listings for your e-commerce business. Our team is dedicated to creating listings that enhance visibility, attract customers, and drive sales.
+                            </p>
+                            
+                            <h3 className='text-xl font-bold leading-relaxed'>
+                                Why Choose Us for E-commerce Listings?
+                            </h3>
+                            <p className="text-lg leading-relaxed">
+                                Comprehensive Listings: We provide detailed and informative product descriptions that highlight key features and benefits.<br />
+                                High-Quality Images: Our team ensures that your products are showcased with high-quality images that attract and engage customers.<br />
+                                SEO Optimization: We optimize your listings with relevant keywords to improve search rankings and increase visibility.<br />
+                                Competitive Pricing Strategies: We analyze market trends to help you set competitive prices that maximize sales.<br />
+                                Consistency Across Platforms: We ensure consistent and accurate listings across multiple e-commerce platforms.<br />
+                                Ongoing Management: Our services include regular updates and management to keep your listings current and competitive.
+                            </p>
+                            
+                            <h3 className='text-xl font-bold leading-relaxed'>
+                                Let's Boost Your Sales!
+                            </h3>
+                            <p className="text-lg leading-relaxed">
+                                Ready to enhance your e-commerce presence and boost your sales? Contact us today to discuss your e-commerce listing needs. Whether you're launching a new product or updating your existing inventory, we’re here to help you succeed with listings that stand out.<br/>
+                                <br/>
+                                At <span className='font-extrabold'>TheClientsMaker.com</span>, we’re not just creating listings; we’re driving your business forward.
+                            </p>
           </div>
         </div>
       </div>

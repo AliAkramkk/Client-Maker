@@ -6,7 +6,6 @@ import Service from "./Pages/Service";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import ImageSlider from "./Pages/Image/ImageSlider";
-import Service1 from "./Pages/Service1";
 import ContentMarketing from "./Pages/ContentMarketing";
 import SeoPage from "./Pages/SeoPage";
 import WebDevelopment from "./Pages/WebDevelopment";

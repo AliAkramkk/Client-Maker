@@ -4,3 +4,14 @@
   background-position: center; /* Centers the image */
   /* Additional styles if needed */
 }
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
