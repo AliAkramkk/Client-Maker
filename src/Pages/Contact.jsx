@@ -131,7 +131,7 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-      {/* <Footer /> */}
+     <WhatsappButton />
     </div>
   );
 };
