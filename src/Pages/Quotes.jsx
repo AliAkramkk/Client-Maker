@@ -21,7 +21,7 @@ const Quotes = () => {
                 const [quoteText, author] = quote.split(' - ');
 
                 return (
-                    <div key={index} className="text-white font-medium m-10 bg-gradient-to-t from-gray-900/50 to-gray-900/25 p-4 rounded-xl">
+                    <div key={index} className="text-white font-medium m-10 bg-black p-4 rounded-xl">
                         <div className="inline-block">&quot;{quoteText}&quot;</div>
                         <div className="text-base font-bold p-2">{author}</div> {/* Display author */}
                     </div>

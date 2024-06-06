@@ -6,7 +6,7 @@ import section from "../../assets/boy1.png";
 const SectionCard2 = () => {
   const { ref, inView } = useInView({
     triggerOnce: true, 
-    threshold: 0.50 
+    threshold: 0.60 
   });
 
   return (
@@ -17,7 +17,7 @@ const SectionCard2 = () => {
             <motion.div
               initial={{ x: "-100vw" }}
               animate={inView ? { x: 0 } : { x: "-100vw" }} 
-              transition={{ type: "spring", stiffness: 120 ,duration: 15}}
+              transition={{ type: "spring", stiffness: 30 ,duration: 25}}
               className="relative h-64 sm:h-80 lg:h-full"
             >
               <img

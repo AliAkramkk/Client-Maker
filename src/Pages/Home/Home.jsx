@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import Navbar from "../../Components/Navbar/Navbar";
 import SectionCard from "../../Components/Home/SectionCard";
 import uaeCard from "../../assets/home2.jpg";
@@ -21,8 +21,7 @@ import Quotes from "../Quotes";
 import SectionCard3 from "../../Components/Home/SectionCard3";
 import SectionCard4 from "../../Components/Home/SectionCard4";
 import WhatsappButton from "../../Components/WhatsappButton";
-
-
+import CallToAction from "../../Components/Home/CallToAction";
 
 const Home = () => {
   const settings = {
@@ -48,303 +47,181 @@ const Home = () => {
       },
     ],
   };
-  const navbarStyle = {
-    background:
-      "linear-gradient(to right,  rgb(250, 224, 226), rgb(189, 193, 199))",
+
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
   };
+
   const services = [
     {
-      id : 1,
-      tittle : "Digital Marketing",
+      title: "Email Marketing",
+      description:
+        "Unlock your business's digital potential with TheClientsMaker.com. We specialize in crafting tailored digital strategies to elevate your brand and drive results. From captivating website design to engaging content creation, we offer a comprehensive suite of digital marketing services. Let us help you thrive in the online landscape.",
+      image: ser,
+      link: "/email",
+    },
+    {
+      title: "Content Creation",
+      description:
+        "Empower your brand with expert content creation from TheClientsMaker.com. Our team specializes in crafting compelling content tailored to your audience. From blog posts to social media campaigns, we offer a range of services to enhance your online presence. Let us create content that engages and inspires your audience.",
+      image: ser1,
+      link: "/content",
+    },
+    {
+      title: "Web Development",
+      description:
+        "Transform your space with our expert interior design services at TheClientsMaker.com. From conceptualization to execution, we specialize in creating stunning interiors tailored to your style and needs. Let us bring your vision to life and elevate your space to new heights of beauty and functionality.",
+      image: ser2,
+      link: "/web",
+    },
+    {
+      title: "WhatsApp API",
+      description:
+        "Elevate your brand with captivating graphic design from TheClientsMaker.com. Our team specializes in creating visually stunning graphics that leave a lasting impression. From logos to marketing materials, we offer a range of services to help your brand stand out. Let us bring your ideas to life with creativity and precision.",
+      image: ser3,
+      link: "/whatsapp",
+    },
+    {
+      title: "SEO",
+      description:
+        "Boost your online visibility with expert SEO services from TheClientsMaker.com. We specialize in optimizing your website to rank higher on search engines and attract more organic traffic. From keyword research to on-page optimization, we offer a comprehensive approach to improving your search engine rankings. Let us help your business reach its full potential online.",
+      image: ser4,
+      link: "/seo",
+    },
+    {
+      title: "Google Ad",
+      description:
+        "At TheClientsMaker.com, we specialize in crafting powerful Google Ads campaigns to propel your business to new heights. With our expertise, we'll help you dominate the search engine results pages (SERPs) and attract more customers to your website.",
+      image: ser5,
+      link: "/google",
+    },
+    {
+      title: "Meta Ad",
+      description:
+        "At TheClientsMaker.com, we specialize in creating impactful Meta Ads that drive results. With our expertise, we'll help you reach your target audience across the Meta platform and beyond, maximizing your online visibility and attracting more customers to your business.",
+      image: ser6,
+      link: "/meta",
+    },
+    {
+      title: "E Commerce Listing",
+      description:
+        "At TheClientsMaker.com, we specialize in creating high-converting e-commerce listings that attract customers and drive sales. With our expertise, we'll optimize your product listings to maximize visibility, increase conversions, and grow your online business.",
+      image: ser7,
+      link: "/ecom",
+    },
+  ];
 
-    }
-  ]
   return (
-    <div className="bg-black">
-      <Navbar />
-      <section
-        className="relative bg-contain bg-center bg-no-repeat "
-        style={{
-          backgroundImage: `url(${uaeCard})`,
-          backgroundSize: "contain",
-          backgroundPosition: "85% 15%",
-          backgroundRepeat: "no-repeat",
-          padding: "0 5px",
-          maxWidth: "100vw", 
-          // animation: "zoomEffect 6s ease-in-out infinite",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+    <>
+      <div className="bg-black overflow-hidden">
+        <Navbar />
+        <section
+          className="relative bg-contain bg-center bg-no-repeat overflow-hidden"
+          style={{
+            backgroundImage: `url(${uaeCard})`,
+            backgroundSize: "contain",
+            backgroundPosition: "85% 15%",
+            backgroundRepeat: "no-repeat",
+            padding: "0 5px",
+            maxWidth: "100vw",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/75 sm:bg-transparent sm:from-black/95 sm:to-black/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
-              Opening a new era for your business
-              <br />
-              <strong className="block font-extrabold text-rose-700 font-serif text-5xl  shadow-slate-950">
-                GROWTH
-              </strong>
-            </h1>
+          <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+            <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+              <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+                Opening a new era for your business
+                <br />
+                <strong className="block font-extrabold text-rose-700 font-serif text-5xl shadow-slate-950">
+                  GROWTH
+                </strong>
+              </h1>
 
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed text-white">
-              From all set-ups to optimizations, we provide you tailored
-              marketing support
-            </p>
+              <p className="mt-4 max-w-lg sm:text-xl/relaxed text-white">
+                From all set-ups to optimizations, we provide you tailored
+                marketing support
+              </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
-              <Link
-                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... animate-bounce  ..."
-                to="/contact"
-              >
-                LET US KNOW YOUR GOAL
-              </Link>
+              <div className="mt-8 flex flex-wrap gap-4 text-center">
+                <Link
+                  className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate-bounce"
+                  to="/contact"
+                >
+                  LET US KNOW YOUR GOAL
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        <WhatsappButton />
+        <SectionCard2 />
+        <div className="bg-gray-200 overflow-hidden">
+          <h1 className="text-3xl lg:text-3xl lg:ml-52 font-bold mb-4 pt-10 text-center lg:text-left text-black relative">
+            Services
+            <span className="absolute bottom-0 left-0 h-1 lg:-ml-60 bg-black w-1/3"></span>
+          </h1>
+          <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
+            <div className="lg:w-1/3 mb-8 lg:mb-0 lg:ml-20 lg:mr-32">
+              <p className="text-base text-black leading-relaxed font-normal">
+                At our company, we're passionate about transforming businesses through cutting-edge services that redefine industry standards. With a focus on innovation and excellence, we're here to help you thrive in the digital landscape. From search engine optimization (SEO) to social media management, our comprehensive suite of services covers every aspect of digital marketing.
+              </p>
+            </div>
+            <div className="lg:w-2/3">
+              {services.map((service, index) => (
+                <div key={index} className="mb-4 lg:mr-32">
+                  <div
+                    className="flex justify-between items-center bg-inherit cursor-pointer"
+                    onClick={() => handleToggle(index)}
+                  >
+                    <h2
+                      className={`text-lg font-semibold ${
+                        activeIndex === index ? "text-orange-600" : "text-black"
+                      }`}
+                    >
+                      {service.title}
+                    </h2>
+                    <span className="text-black ">
+                      {activeIndex === index ? "▲" : "▼"}
+                    </span>
+                  </div>
+                  <div className="relative">
+                    <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gray-700"></div>
+                  </div>
+                  {activeIndex === index && (
+                    <div className="bg-white p-4 border-t-2">
+                      <div className="flex flex-col lg:flex-row">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
+                        />
+                        <div>
+                          <p className="text-black mb-4">{service.description}</p>
+                          <Link
+                            to={service.link}
+                            className="text-orange-600 font-semibold"
+                          >
+                            Learn more →
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
-      <WhatsappButton />
-      <SectionCard2 style={{ paddingTop: "3rem", paddingBottom: "2rem" }}/>
-      <h1 className="text-4xl font-bold text-gray-800 mb-4 mt-8 text-center">
-        Our Services{" "}
-      </h1>
-
-      <Slider {...settings}>
-        {/* <div className="w-full sm:w-1/2 md:w-1/3 lg:w-80 bg-gray-200 mx-2 rounded-md my-4 overflow-hidden hover:bg-gray-300 "> */}
-        <div className="p-4">
-          <Link to="/email">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-lg hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser}
-                className="absolute inset-0 h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">
-                   Email Marketing
-                  </h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Unlock your business's digital potential with
-                    TheClientsMaker.com. We specialize in crafting tailored
-                    digital strategies to elevate your brand and drive results.
-                    From captivating website design to engaging content
-                    creation, we offer a comprehensive suite of digital
-                    marketing services. Let us help you thrive in the online
-                    landscape.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/content">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser1}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">
-                    Content Creation
-                  </h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Empower your brand with expert content creation from
-                    TheClientsMaker.com. Our team specializes in crafting
-                    compelling content tailored to your audience. From blog
-                    posts to social media campaigns, we offer a range of
-                    services to enhance your online presence. Let us create
-                    content that engages and inspires your audience.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/web">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser2}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">
-                   Web Development
-                  </h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Transform your space with our expert interior design
-                    services at TheClientsMaker.com. From conceptualization to
-                    execution, we specialize in creating stunning interiors
-                    tailored to your style and needs. Let us bring your vision
-                    to life and elevate your space to new heights of beauty and
-                    functionality.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/whatsapp">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser3}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">
-                    WhatsApp API
-                  </h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Elevate your brand with captivating graphic design from
-                    TheClientsMaker.com. Our team specializes in creating
-                    visually stunning graphics that leave a lasting impression.
-                    From logos to marketing materials, we offer a range of
-                    services to help your brand stand out. Let us bring your
-                    ideas to life with creativity and precision.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/seo">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser4}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">SEO</h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                    Boost your online visibility with expert SEO services from
-                    TheClientsMaker.com. We specialize in optimizing your
-                    website to rank higher on search engines and attract more
-                    organic traffic. From keyword research to on-page
-                    optimization, we offer a comprehensive approach to improving
-                    your search engine rankings. Let us help your business reach
-                    its full potential online.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/google">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser5}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">Google Ad</h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  At TheClientsMaker.com, we specialize in crafting powerful Google Ads campaigns to propel your business to new heights. With our expertise, we'll help you dominate the search engine results pages (SERPs) and attract more customers to your website..
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/meta">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser6}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">Meta Ad</h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  At TheClientsMaker.com, we specialize in creating impactful Meta Ads that drive results. With our expertise, we'll help you reach your target audience across the Meta platform and beyond, maximizing your online visibility and attracting more customers to your business
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        <div className="p-4">
-          <Link to="/ecom">
-            <article className="relative overflow-hidden rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105  hover:shadow-xl hover:shadow-sky-400">
-              <img
-                alt=""
-                src={ser7}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-
-              <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-                <div className="p-4 sm:p-6">
-                  {/* <time datetime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time> */}
-
-                  <h2 className="mt-0.5 text-lg text-white">E Commerce Listing</h2>
-
-                  <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  At TheClientsMaker.com, we specialize in creating high-converting e-commerce listings that attract customers and drive sales. With our expertise, we'll optimize your product listings to maximize visibility, increase conversions, and grow your online business.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </Link>
-        </div>
-        {/* Add more image divs as needed */}
-
-        {/* </div> */}
-      </Slider>
-    
-<SectionCard3/>
-      <SectionCard />
-<SectionCard4/>
-      
+        <SectionCard3 />
+        <SectionCard />
+        <SectionCard4 />
+      </div>
       <Quotes />
-      {/* <h1 className="text-4xl font-bold text-gray-400 mb-4 mt-8 text-center">
-        Blogs{" "}
-      </h1> */}
-     
-      
-    </div>
+      <CallToAction />
+    </>
   );
 };
 

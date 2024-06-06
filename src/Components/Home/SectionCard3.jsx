@@ -26,7 +26,7 @@ const SectionCard3 = () => {
           {/* Team */}
           <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3 md:gap-16">
             <div>
-              <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
+              <span className="mb-5 inline-block rounded-full bg-blue-100 p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
                   src={img1}
                   alt="User Avatar"
@@ -52,7 +52,7 @@ const SectionCard3 = () => {
               </p>
             </div> */}
             <div>
-              <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
+              <span className="mb-5 inline-block rounded-full bg-blue-100 p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
                   src={img}
                   alt="User Avatar"
@@ -65,7 +65,7 @@ const SectionCard3 = () => {
               </p>
             </div>
             <div>
-              <span className="mb-5 inline-block rounded-full bg-white p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
+              <span className="mb-5 inline-block rounded-full bg-blue-100 p-2 shadow-lg dark:bg-gray-700/75 dark:shadow-gray-950">
                 <img
                   src={img2}
                   alt="User Avatar"
