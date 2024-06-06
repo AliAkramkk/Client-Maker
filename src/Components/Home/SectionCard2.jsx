@@ -17,7 +17,7 @@ const SectionCard2 = () => {
             <motion.div
               initial={{ x: "-100vw" }}
               animate={inView ? { x: 0 } : { x: "-100vw" }} 
-              transition={{ type: "spring", stiffness: 30 ,duration: 25}}
+              transition={{ type: "spring", stiffness: 40 ,duration: 25}}
               className="relative h-64 sm:h-80 lg:h-full"
             >
               <img

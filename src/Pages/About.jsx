@@ -8,6 +8,7 @@ import WhatsappButton from '../Components/WhatsappButton';
 import { Link } from 'react-router-dom';
 import CallToAction from '../Components/Home/CallToAction';
 import HeroSection from '../Components/HeroSection';
+import WhyChooseUs from '../Components/WhyChooseUs';
 
 const About = () => {
   return (
@@ -25,6 +26,7 @@ const About = () => {
         </div>
 
 <HeroSection />
+<WhyChooseUs />
       <div className="flex flex-col items-center justify-start mt-16">
         <div className="p-6 text-black max-w-screen-lg">
           <p className="text-lg md:text-xl lg:text-2xl mb-4 font-bold">Our Mission</p>

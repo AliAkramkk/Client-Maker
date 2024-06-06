@@ -59,8 +59,8 @@ const Contact = () => {
           className="bg-black p-8 shadow-lg rounded-lg text-white"
         >
           <div className="text-center">
-            <h1 className="text-4xl font-bold">Welcome to <span className="text-yellow-300">theclientsmaker</span><span className="text-red-600">.com</span></h1>
-            <p className="mt-2 text-lg">Your Digital Salesman - Our friendly team is always here to chat.</p>
+            <h1 className="text-4xl font-bold">Contact Us</h1>
+            <p className="mt-2 text-lg">Our friendly team is always here to chat.</p>
           </div>
           <div className="grid grid-cols-1 gap-8 mt-10 md:grid-cols-2">
             <ContactInfo
@@ -78,6 +78,11 @@ const Contact = () => {
               title="Phone"
               content="0523584369"
             />
+            <ContactInfo
+              icon={<OfficeIcon />}
+              title="Office"
+              content="Koppam Arcade,Koppam, Palakkad, Kerala, India"
+            />
           </div>
         </motion.section>
       </div>
@@ -94,7 +99,7 @@ const Contact = () => {
                 <ContactInputBox type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} />
                 <ContactInputBox type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} />
                 <ContactInputBox type="tel" name="phone" placeholder="Your Phone" value={formData.phone} onChange={handleChange} />
-                <ContactTextArea row="6" placeholder="Your Message" name="details" value={formData.details} onChange={handleChange} />
+                <ContactTextArea rows="6" placeholder="Your Message" name="details" value={formData.details} onChange={handleChange} />
                 <div className="mt-4">
                   <button type="submit" className="w-full bg-purple-600 text-white p-3 rounded-lg hover:bg-purple-700 transition">Send Message</button>
                 </div>
@@ -133,8 +138,6 @@ const Contact = () => {
 
 const ContactInfo = ({ icon, title, content }) => {
   return (
-    <>
-    <WhatsappButton />
     <div className="flex items-center mb-4">
       <span className="inline-block p-3 bg-purple-100 rounded-full text-purple-600">
         {icon}
@@ -144,15 +147,14 @@ const ContactInfo = ({ icon, title, content }) => {
         <p className="mt-1">{content}</p>
       </div>
     </div>
-    </>
   );
 };
 
-const ContactTextArea = ({ row, placeholder, name, value, onChange }) => {
+const ContactTextArea = ({ rows, placeholder, name, value, onChange }) => {
   return (
     <div className="mt-4">
       <textarea
-        rows={row}
+        rows={rows}
         placeholder={placeholder}
         name={name}
         value={value}

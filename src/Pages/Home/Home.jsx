@@ -22,6 +22,7 @@ import SectionCard3 from "../../Components/Home/SectionCard3";
 import SectionCard4 from "../../Components/Home/SectionCard4";
 import WhatsappButton from "../../Components/WhatsappButton";
 import CallToAction from "../../Components/Home/CallToAction";
+import WhyChooseUs from "../../Components/WhyChooseUs";
 
 const Home = () => {
   const settings = {
@@ -219,6 +220,7 @@ const Home = () => {
         <SectionCard />
         <SectionCard4 />
       </div>
+      <WhyChooseUs />
       <Quotes />
       <CallToAction />
     </>

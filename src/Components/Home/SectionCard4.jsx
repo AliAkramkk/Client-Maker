@@ -21,7 +21,7 @@ const SectionCard4 = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 text-center">
           <dl className="space-y-1 px-5 py-8">
             <dt className="text-4xl font-extrabold text-white dark:text-white">
-              {projectCount}
+              {projectCount}+
             </dt>
             <dd className="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-500">
               Projects
