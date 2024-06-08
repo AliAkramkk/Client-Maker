@@ -24,6 +24,8 @@ import WhatsappButton from "../../Components/WhatsappButton";
 import CallToAction from "../../Components/Home/CallToAction";
 import WhyChooseUs from "../../Components/WhyChooseUs";
 
+
+
 const Home = () => {
   const settings = {
     dots: true,
@@ -223,6 +225,7 @@ const Home = () => {
       <WhyChooseUs />
       <Quotes />
       <CallToAction />
+     
     </>
   );
 };

@@ -14,6 +14,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@material-tailwind/react": "^2.1.9",
+    "@react-three/drei": "^9.106.0",
+    "@react-three/fiber": "^8.16.8",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.2.4",
     "react": "^18.2.0",
@@ -25,7 +27,8 @@
     "react-router-dom": "^6.22.3",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "three": "^0.165.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
