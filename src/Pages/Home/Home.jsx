@@ -23,6 +23,8 @@ import SectionCard4 from "../../Components/Home/SectionCard4";
 import WhatsappButton from "../../Components/WhatsappButton";
 import CallToAction from "../../Components/Home/CallToAction";
 import WhyChooseUs from "../../Components/WhyChooseUs";
+import Works from "../../Components/Home/Works";
+
 
 
 
@@ -61,35 +63,36 @@ const Home = () => {
     {
       title: "Email Marketing",
       description:
-        "Unlock your business's digital potential with TheClientsMaker.com. We specialize in crafting tailored digital strategies to elevate your brand and drive results. From captivating website design to engaging content creation, we offer a comprehensive suite of digital marketing services. Let us help you thrive in the online landscape.",
+        "Our email marketing services are designed  to help you create engaging campaigns that resonate with your  subscribers and achieve your business objectives",
+              
       image: ser,
       link: "/email",
     },
     {
       title: "Content Creation",
       description:
-        "Empower your brand with expert content creation from TheClientsMaker.com. Our team specializes in crafting compelling content tailored to your audience. From blog posts to social media campaigns, we offer a range of services to enhance your online presence. Let us create content that engages and inspires your audience.",
+        "Empower your brand with expert content creation . Our team specializes in crafting compelling content tailored to your audience. From blog posts to social media campaigns.",
       image: ser1,
       link: "/content",
     },
     {
       title: "Web Development",
       description:
-        "Transform your space with our expert interior design services at TheClientsMaker.com. From conceptualization to execution, we specialize in creating stunning interiors tailored to your style and needs. Let us bring your vision to life and elevate your space to new heights of beauty and functionality.",
+      " Our web development services are designed to help you establish a strong online presence and achieve your digital goals.",      
       image: ser2,
       link: "/web",
     },
     {
       title: "WhatsApp API",
       description:
-        "Elevate your brand with captivating graphic design from TheClientsMaker.com. Our team specializes in creating visually stunning graphics that leave a lasting impression. From logos to marketing materials, we offer a range of services to help your brand stand out. Let us bring your ideas to life with creativity and precision.",
+        "we offer robust WhatsApp API integration services designed to enhance your customer communication and engagement.",
       image: ser3,
       link: "/whatsapp",
     },
     {
       title: "SEO",
       description:
-        "Boost your online visibility with expert SEO services from TheClientsMaker.com. We specialize in optimizing your website to rank higher on search engines and attract more organic traffic. From keyword research to on-page optimization, we offer a comprehensive approach to improving your search engine rankings. Let us help your business reach its full potential online.",
+        "Boost your online visibility with expert SEO services from TheClientsMaker.com. We specialize in optimizing your website to rank higher on search engines and attract more organic traffic.",
       image: ser4,
       link: "/seo",
     },
@@ -168,7 +171,7 @@ const Home = () => {
           </h1>
           <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
             <div className="lg:w-1/3 mb-8 lg:mb-0 lg:ml-20 lg:mr-32">
-              <p className="text-base text-black leading-relaxed font-normal">
+              <p className="text-xl text-black leading-relaxed font-medium   text-secondary text-[16px] text-justify">
                 At our company, we're passionate about transforming businesses through cutting-edge services that redefine industry standards. With a focus on innovation and excellence, we're here to help you thrive in the digital landscape. From search engine optimization (SEO) to social media management, our comprehensive suite of services covers every aspect of digital marketing.
               </p>
             </div>
@@ -202,7 +205,7 @@ const Home = () => {
                           className="w-full lg:w-1/3 mb-4 lg:mb-0 lg:mr-4 rounded-lg"
                         />
                         <div>
-                          <p className="text-black mb-4">{service.description}</p>
+                          <p className="text-black mb-4  text-secondary text-secondary text-[14px] text-justify">{service.description}</p>
                           <Link
                             to={service.link}
                             className="text-orange-600 font-semibold"
@@ -222,10 +225,12 @@ const Home = () => {
         <SectionCard />
         <SectionCard4 />
       </div>
+     <Works />
       <WhyChooseUs />
       <Quotes />
       <CallToAction />
-     
+    
+    
     </>
   );
 };

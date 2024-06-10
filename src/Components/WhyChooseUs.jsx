@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
             <h1 className="text-3xl lg:text-5xl font-bold mb-6 text-center lg:text-left">
               Why People Trust Us? Learn About Us!
             </h1>
-            <p className="mb-6 text-center lg:text-left text-gray-700">
+            <p className="mb-6  lg:text-left text-black text-secondary text-secondary text-[14px] text-justify">
               At TheClientsMaker.com, our commitment to excellence sets us apart
               in the digital marketing landscape. We believe in building lasting
               relationships with our clients by delivering exceptional results.
@@ -63,11 +63,12 @@ const WhyChooseUs = () => {
         </div>
         <div className="w-full lg:w-1/2 px-4">
           <div className="relative h-full min-h-[300px] lg:min-h-[400px]">
-            <div className="absolute inset-0 border-4 rounded-lg  border-black"></div>
+            <div className="absolute inset-0 border-4 rounded-lg border-black"></div>
             <img
-              className="absolute top-6 left-6 w-full h-full object-cover rounded-lg shadow-lg"
+              className="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-lg lg:static"
               src={featureImage}
               alt="Feature"
+              style={{ top: 'auto', left: 'auto' }} 
             />
           </div>
         </div>

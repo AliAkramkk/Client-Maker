@@ -8,7 +8,7 @@ import presentation from "../../assets/presentation.gif";
 import location from "../../assets/way.gif";
 const SectionCard = () => {
   return (
-    <section className="bg-black text-gray-900">
+    <section className="bg-black text-gray-400">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-lg text-center">
          

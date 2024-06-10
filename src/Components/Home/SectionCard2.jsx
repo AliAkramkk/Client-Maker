@@ -35,7 +35,7 @@ const SectionCard2 = () => {
               transition={{ type: "spring", stiffness: 120,duration:  0 }}
               className="p-8 sm:p-16 lg:p-24"
             >
-              <p className="text-white font-medium">
+              <p className="text-white font-medium  text-secondary text-secondary text-[14px] text-justify">
                 Hey, <br />
                 Welcome to TheClientsMaker.com, a leading digital marketing and
                 business development agency nestled in the vibrant landscape of
