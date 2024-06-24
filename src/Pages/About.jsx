@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify'; 
 import Navbar from '../Components/Navbar/Navbar';
 import aboutImage from '../assets/homecard1.jpg';
 
@@ -14,6 +15,7 @@ const About = () => {
   return (
     <div className="bg-white min-h-screen">
       <Navbar />
+      <ToastContainer />
       <div className="relative">
           <img
             src={aboutImage}

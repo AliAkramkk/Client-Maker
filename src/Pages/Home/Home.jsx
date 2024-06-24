@@ -17,6 +17,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify'; 
 import Quotes from "../Quotes";
 import SectionCard3 from "../../Components/Home/SectionCard3";
 import SectionCard4 from "../../Components/Home/SectionCard4";
@@ -123,6 +124,7 @@ const Home = () => {
     <>
       <div className="bg-black overflow-hidden">
         <Navbar />
+        <ToastContainer />
         <section
           className="relative bg-contain bg-center bg-no-repeat overflow-hidden"
           style={{
@@ -171,7 +173,7 @@ const Home = () => {
           </h1>
           <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row">
             <div className="lg:w-1/3 mb-8 lg:mb-0 lg:ml-20 lg:mr-32">
-              <p className="text-xl text-black leading-relaxed font-medium   text-secondary text-[16px] text-justify">
+              <p className="text-xl text-black leading-relaxed font-medium   text-secondary text-[14px] text-justify">
                 At our company, we're passionate about transforming businesses through cutting-edge services that redefine industry standards. With a focus on innovation and excellence, we're here to help you thrive in the digital landscape. From search engine optimization (SEO) to social media management, our comprehensive suite of services covers every aspect of digital marketing.
               </p>
             </div>
@@ -221,7 +223,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <SectionCard3 />
+        {/* <SectionCard3 /> */}
         <SectionCard />
         <SectionCard4 />
       </div>

@@ -68,15 +68,15 @@ const Contact = () => {
               title="Email"
               content="hi@theclientsmaker.com"
             />
-            <ContactInfo
+            {/* <ContactInfo
               icon={<OfficeIcon />}
               title="Office"
               content="301 City Centre, Oud Metha, Dubai"
-            />
+            /> */}
             <ContactInfo
               icon={<PhoneIcon />}
               title="Phone"
-              content="0523584369"
+              content="9895710888"
             />
             <ContactInfo
               icon={<OfficeIcon />}
