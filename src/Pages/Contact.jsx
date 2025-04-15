@@ -48,8 +48,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-100">
+    <>
       <Navbar />
+    <div className="bg-gray-100 p-8">
       <ToastContainer />
       <div className="container my-16 mx-auto px-6">
         <motion.section
@@ -133,6 +134,7 @@ const Contact = () => {
       </div>
      <WhatsappButton />
     </div>
+    </>
   );
 };
 
